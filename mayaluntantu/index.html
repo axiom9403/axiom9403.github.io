@@ -1,0 +1,922 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>玛雅论坛图霸天下-老牌影像社区频道与版块索引</title>
+<meta name="description" content="玛雅论坛图霸天下是影像同好聚集的老论坛，整理图霸天下版块的摄影器材、旅拍地理、暗房后期、看图评测等频道，收录本周更新、深度解析与经验问答，帮助新老用户快速找到想看的帖子与作者。">
+<meta name="keywords" content="玛雅论坛图霸天下">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%231f3a4d'/%3E%3Cpath d='M16 44l10-22 6 12 6-8 10 18z' fill='%23e8b04b'/%3E%3Ccircle cx='44' cy='20' r='5' fill='%23f2e6cf'/%3E%3C/svg%3E">
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"WebSite","name":"玛雅论坛图霸天下","alternateName":"图霸天下","inLanguage":"zh-CN","description":"影像同好聚集的老论坛，图霸天下版块涵盖摄影器材、旅拍地理、暗房后期与看图评测。"}
+</script>
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[
+{"@type":"Question","name":"图霸天下版块的发帖格式有什么要求？","acceptedAnswer":{"@type":"Answer","text":"器材类帖子要求在标题里写清机身与镜头型号，样例帖「X-T5 配 33mm F1.4 扫街」就把型号放在标题开头。旅拍帖需要标注拍摄月份与地区，方便后来者按季节检索。"}},
+{"@type":"Question","name":"玛雅论坛图霸天下的老帖图片为什么会失效？","acceptedAnswer":{"@type":"Answer","text":"2015 年以前上传的图片多数放在论坛自有图床，2021 年 3 月图床迁移后旧链接只保留缩略图。想看原图可以通过楼层里的作者主页找到对应相册，部分作者已把原图补传到新图床。"}},
+{"@type":"Question","name":"新手第一次发图应该选哪个频道？","acceptedAnswer":{"@type":"Answer","text":"先发到「新手试片区」，那里不设精华门槛，回帖以指出构图和曝光问题为主。等攒到 5 张贴图再进「看图评测」，因为评测版要求附上原片参数。"}},
+{"@type":"Question","name":"暗房与后期频道讨论数码流程吗？","acceptedAnswer":{"@type":"Answer","text":"讨论，但偏重流程与色彩管理。版内 10 月 26 日置顶帖把胶片扫描与数码 RAW 的降噪步骤做了对照表，回帖里有人补充了 Capture One 的曲线差异。"}},
+{"@type":"Question","name":"论坛的精华帖评选标准是什么？","acceptedAnswer":{"@type":"Answer","text":"每月由三位版主各提名五帖，再看回帖里的有效技术讨论数量。设问与解答都算，单纯夸图的不算。10 月当选的「雨夜公交站台」帖，回帖里有 31 楼关于慢门手持的争论，被版主列为加分项。"}}
+]}
+</script>
+<style>
+:root{
+  --ink:#1b2733;
+  --ink-soft:#48596b;
+  --paper:#f6f2ea;
+  --paper-2:#fffdf8;
+  --line:#d9d0c0;
+  --brand:#1f3a4d;
+  --brand-2:#2c5468;
+  --accent:#c98a2e;
+  --accent-soft:#f3e2c2;
+  --ok:#3e7a5a;
+  --warn:#a8503a;
+  --radius:10px;
+  --radius-sm:6px;
+  --shadow:0 1px 2px rgba(27,39,51,.06),0 8px 24px -16px rgba(27,39,51,.35);
+  --font:"Noto Serif SC","Songti SC","STSong",Georgia,"Microsoft YaHei",sans-serif;
+  --font-ui:"PingFang SC","Microsoft YaHei",system-ui,sans-serif;
+  --top-offset:104px;
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{
+  margin:0;background:var(--paper);color:var(--ink);
+  font-family:var(--font);font-size:16px;line-height:1.85;
+  -webkit-font-smoothing:antialiased;
+}
+img{max-width:100%;display:block}
+a{color:var(--brand-2);text-decoration:none}
+a:hover{text-decoration:underline}
+h1,h2,h3,h4{line-height:1.35;margin:0;font-weight:700}
+p{margin:0 0 1em}
+ul,ol{margin:0 0 1em;padding-left:1.3em}
+button{font-family:inherit}
+
+/* ===== 吸顶区 ===== */
+.sticky-zone{position:sticky;top:0;z-index:60}
+.notice{
+  background:var(--brand);color:#efe6d4;
+  font-family:var(--font-ui);font-size:13px;
+  padding:7px 20px;display:flex;gap:14px;align-items:center;
+  border-bottom:1px solid rgba(255,255,255,.14);
+}
+.notice .dot{width:7px;height:7px;border-radius:50%;background:var(--accent);flex:none;box-shadow:0 0 0 3px rgba(201,138,46,.25)}
+.notice strong{color:#fff;font-weight:600}
+.notice .sep{opacity:.35}
+.notice a{color:#f2d9a8;text-decoration:underline}
+.site-header{
+  background:rgba(255,253,248,.96);backdrop-filter:blur(6px);
+  border-bottom:1px solid var(--line);
+  font-family:var(--font-ui);
+}
+.header-inner{
+  max-width:1180px;margin:0 auto;padding:12px 20px;
+  display:flex;align-items:center;gap:20px;flex-wrap:wrap;
+}
+.brand{display:flex;align-items:center;gap:10px;flex:none}
+.brand svg{width:34px;height:34px;flex:none}
+.brand-text{display:flex;flex-direction:column;line-height:1.2}
+.brand-text .name{font-weight:700;font-size:17px;color:var(--brand);letter-spacing:.5px}
+.brand-text .sub{font-size:11px;color:var(--ink-soft);letter-spacing:2px}
+.main-nav{display:flex;gap:4px;flex-wrap:wrap;flex:1;min-width:0}
+.main-nav a{
+  font-size:14px;padding:6px 11px;border-radius:var(--radius-sm);
+  color:var(--ink-soft);white-space:nowrap;
+}
+.main-nav a:hover{background:var(--accent-soft);color:var(--brand);text-decoration:none}
+.main-nav a.active{background:var(--brand);color:#fff}
+.header-tools{display:flex;align-items:center;gap:10px;flex:none}
+.search{
+  display:flex;align-items:center;border:1px solid var(--line);
+  border-radius:var(--radius-sm);background:#fff;overflow:hidden;
+}
+.search input{
+  border:0;outline:0;padding:7px 10px;font-size:13px;width:150px;
+  font-family:var(--font-ui);background:transparent;color:var(--ink);
+}
+.search button{
+  border:0;background:var(--brand);color:#fff;padding:8px 12px;
+  font-size:13px;cursor:pointer;
+}
+.search button:hover{background:var(--brand-2)}
+.menu-btn{
+  display:none;border:1px solid var(--line);background:#fff;color:var(--brand);
+  font-size:14px;padding:7px 12px;border-radius:var(--radius-sm);cursor:pointer;
+}
+.menu-btn[aria-expanded="true"]{background:var(--brand);color:#fff}
+:focus-visible{outline:3px solid var(--accent);outline-offset:2px;border-radius:4px}
+
+main{max-width:1180px;margin:0 auto;padding:0 20px 60px}
+section{scroll-margin-top:var(--top-offset)}
+
+/* ===== 首屏 ===== */
+.hero{
+  padding:46px 0 34px;display:grid;grid-template-columns:1.15fr .85fr;
+  gap:40px;align-items:center;border-bottom:1px solid var(--line);
+}
+.hero-badge{
+  display:inline-flex;align-items:center;gap:8px;font-family:var(--font-ui);
+  font-size:12px;letter-spacing:1px;color:var(--brand);
+  background:var(--accent-soft);border:1px solid #e3cb9c;
+  padding:4px 12px;border-radius:999px;margin-bottom:16px;
+}
+.hero h1{font-size:clamp(30px,4.4vw,46px);letter-spacing:2px;color:var(--brand);margin-bottom:16px}
+.hero-lead{font-size:16.5px;color:var(--ink-soft);max-width:33em}
+.hero-actions{display:flex;gap:12px;flex-wrap:wrap;margin-top:22px;font-family:var(--font-ui)}
+.btn{
+  display:inline-block;padding:10px 20px;border-radius:var(--radius-sm);
+  font-size:14px;transition:transform .15s ease;
+}
+.btn:hover{text-decoration:none;transform:translateY(-2px)}
+.btn-primary{background:var(--brand);color:#fff;box-shadow:var(--shadow)}
+.btn-primary:hover{background:var(--brand-2)}
+.btn-ghost{border:1px solid var(--brand);color:var(--brand)}
+.btn-ghost:hover{background:var(--accent-soft)}
+.hero-stats{
+  display:flex;gap:26px;margin-top:26px;font-family:var(--font-ui);flex-wrap:wrap;
+}
+.hero-stats div{font-size:12px;color:var(--ink-soft)}
+.hero-stats b{display:block;font-size:20px;color:var(--brand);font-family:var(--font);letter-spacing:.5px}
+.hero-visual{position:relative;height:340px}
+.hero-visual svg{width:100%;height:100%}
+.hero-cap{
+  position:absolute;right:6px;bottom:2px;font-family:var(--font-ui);font-size:11px;
+  color:var(--ink-soft);letter-spacing:.5px;
+}
+
+/* ===== 通用板块 ===== */
+.block{padding:42px 0;border-bottom:1px solid var(--line)}
+.block:last-of-type{border-bottom:0}
+.block-head{display:flex;align-items:flex-end;justify-content:space-between;gap:18px;margin-bottom:22px;flex-wrap:wrap}
+.block-head h2{font-size:24px;color:var(--brand);letter-spacing:1px;position:relative;padding-left:14px}
+.block-head h2::before{
+  content:"";position:absolute;left:0;top:8px;bottom:8px;width:4px;
+  background:var(--accent);border-radius:2px;
+}
+.block-head .kicker{font-family:var(--font-ui);font-size:12px;color:var(--ink-soft);letter-spacing:1.5px}
+.block-head .more{font-family:var(--font-ui);font-size:13px}
+
+/* 网格卡片 */
+.grid-3{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
+.grid-2{display:grid;grid-template-columns:repeat(2,1fr);gap:18px}
+.card{
+  background:var(--paper-2);border:1px solid var(--line);border-radius:var(--radius);
+  padding:18px;box-shadow:var(--shadow);display:flex;flex-direction:column;
+}
+.card h3{font-size:16.5px;color:var(--brand);margin-bottom:8px}
+.card p{font-size:14px;color:var(--ink-soft);margin-bottom:10px}
+.card .meta{font-family:var(--font-ui);font-size:12px;color:var(--ink-soft);margin-top:auto;display:flex;gap:10px;flex-wrap:wrap}
+.card .meta span{color:var(--accent)}
+.card-thumb{margin:-18px -18px 14px;border-radius:var(--radius) var(--radius) 0 0;overflow:hidden}
+.card-thumb img{width:100%;height:150px;object-fit:cover}
+
+/* 紧凑列表 */
+.list-clean{list-style:none;padding:0;margin:0;font-family:var(--font-ui)}
+.list-clean li{
+  display:flex;gap:14px;align-items:baseline;padding:11px 0;
+  border-bottom:1px dashed var(--line);font-size:14px;
+}
+.list-clean li:last-child{border-bottom:0}
+.list-clean time{font-size:12px;color:var(--accent);flex:none;width:78px;font-variant-numeric:tabular-nums}
+.list-clean .t{color:var(--ink);flex:1}
+.list-clean .t:hover{color:var(--brand)}
+.list-clean .tag{font-size:11px;color:var(--brand-2);background:var(--accent-soft);padding:1px 7px;border-radius:999px;flex:none}
+
+/* 频道索引 */
+.channel-index{display:grid;grid-template-columns:repeat(4,1fr);gap:12px;font-family:var(--font-ui)}
+.channel-index a{
+  display:block;background:var(--paper-2);border:1px solid var(--line);
+  border-radius:var(--radius-sm);padding:12px 14px;color:var(--ink);
+  font-size:14px;transition:transform .15s ease,border-color .15s ease;
+}
+.channel-index a:hover{transform:translateY(-2px);border-color:var(--accent);text-decoration:none}
+.channel-index a small{display:block;font-size:11.5px;color:var(--ink-soft);margin-top:3px}
+
+/* 深度解析 */
+.feature{
+  background:var(--paper-2);border:1px solid var(--line);border-radius:var(--radius);
+  padding:30px 34px;box-shadow:var(--shadow);
+}
+.feature h3{font-size:19px;color:var(--brand);margin:26px 0 10px}
+.feature h3:first-child{margin-top:0}
+.feature p{font-size:15.5px}
+.feature .pull{
+  border-left:4px solid var(--accent);background:#fbf5e9;
+  padding:14px 18px;border-radius:0 var(--radius-sm) var(--radius-sm) 0;
+  font-size:15.5px;color:var(--brand);margin:20px 0;
+}
+.feature table{width:100%;border-collapse:collapse;font-family:var(--font-ui);font-size:13.5px;margin:14px 0 18px}
+.feature th,.feature td{border:1px solid var(--line);padding:8px 10px;text-align:left;vertical-align:top}
+.feature th{background:#f1e9da;color:var(--brand);font-weight:600;width:120px}
+.checklist{list-style:none;padding:0;margin:12px 0 18px;font-family:var(--font-ui);font-size:14px}
+.checklist li{padding:8px 0 8px 26px;position:relative;border-bottom:1px dashed var(--line)}
+.checklist li::before{content:"✓";position:absolute;left:2px;color:var(--ok);font-weight:700}
+.checklist li.x::before{content:"✕";color:var(--warn)}
+
+/* 步骤 */
+.steps{counter-reset:s;display:grid;grid-template-columns:repeat(4,1fr);gap:16px}
+.steps li{
+  list-style:none;counter-increment:s;background:var(--paper-2);
+  border:1px solid var(--line);border-radius:var(--radius);padding:18px 16px 18px;
+  font-size:14px;font-family:var(--font-ui);position:relative;
+}
+.steps li::before{
+  content:counter(s);display:inline-flex;align-items:center;justify-content:center;
+  width:26px;height:26px;border-radius:50%;background:var(--brand);color:#fff;
+  font-family:var(--font);font-size:14px;margin-bottom:10px;
+}
+.steps b{display:block;color:var(--brand);margin-bottom:4px;font-size:15px}
+
+/* FAQ */
+.faq details{
+  background:var(--paper-2);border:1px solid var(--line);border-radius:var(--radius-sm);
+  padding:0 18px;margin-bottom:10px;
+}
+.faq summary{
+  cursor:pointer;padding:14px 0;font-size:15.5px;color:var(--brand);font-weight:600;
+  list-style:none;display:flex;justify-content:space-between;gap:12px;align-items:center;
+}
+.faq summary::-webkit-details-marker{display:none}
+.faq summary::after{content:"+";font-family:var(--font-ui);color:var(--accent);font-size:20px;line-height:1}
+.faq details[open] summary::after{content:"–"}
+.faq .a{padding:0 0 16px;font-size:14.5px;color:var(--ink-soft);border-top:1px dashed var(--line);padding-top:12px}
+
+/* 评论 */
+.comments{display:grid;grid-template-columns:repeat(2,1fr);gap:16px}
+.comment{
+  background:var(--paper-2);border:1px solid var(--line);border-radius:var(--radius);
+  padding:16px 18px;font-family:var(--font-ui);
+}
+.comment .who{display:flex;align-items:center;gap:9px;font-size:13px;margin-bottom:8px}
+.avatar{
+  width:28px;height:28px;border-radius:50%;background:var(--brand);color:#fff;
+  display:inline-flex;align-items:center;justify-content:center;font-size:12px;flex:none;
+}
+.comment .who b{color:var(--brand);font-weight:600}
+.comment .who time{color:var(--ink-soft);font-size:11.5px;margin-left:auto}
+.comment p{font-size:14px;color:var(--ink);margin:0}
+.comment .ref{color:var(--accent);font-size:13px}
+
+/* 标签 */
+.tags{display:flex;flex-wrap:wrap;gap:10px;font-family:var(--font-ui)}
+.tags a{
+  border:1px solid var(--line);background:var(--paper-2);border-radius:999px;
+  padding:6px 15px;font-size:13.5px;color:var(--ink-soft);
+}
+.tags a:hover{border-color:var(--accent);color:var(--brand);text-decoration:none;background:var(--accent-soft)}
+
+/* 时间线 */
+.timeline{list-style:none;padding:0;margin:0;font-family:var(--font-ui)}
+.timeline li{
+  position:relative;padding:0 0 20px 26px;border-left:2px solid var(--line);
+  margin-left:6px;font-size:14px;
+}
+.timeline li:last-child{border-left-color:transparent;padding-bottom:0}
+.timeline li::before{
+  content:"";position:absolute;left:-7px;top:6px;width:12px;height:12px;
+  border-radius:50%;background:var(--paper);border:2px solid var(--accent);
+}
+.timeline time{display:block;font-size:12px;color:var(--accent);letter-spacing:.5px}
+.timeline b{color:var(--brand)}
+
+/* 榜单一览 */
+.rank{list-style:none;padding:0;margin:0;font-family:var(--font-ui);counter-reset:r}
+.rank li{
+  counter-increment:r;display:flex;gap:14px;align-items:flex-start;
+  padding:12px 0;border-bottom:1px dashed var(--line);font-size:14px;
+}
+.rank li:last-child{border-bottom:0}
+.rank li::before{
+  content:counter(r);font-family:var(--font);font-size:20px;color:var(--accent);
+  width:26px;flex:none;line-height:1.3;font-weight:700;
+}
+.rank b{color:var(--brand);display:block}
+.rank small{color:var(--ink-soft);font-size:12.5px}
+
+/* 侧栏合并布局（主内容 + 侧栏） */
+.layout{display:grid;grid-template-columns:minmax(0,1fr) 300px;gap:36px;align-items:start}
+.side{position:sticky;top:var(--top-offset)}
+.side-card{
+  background:var(--paper-2);border:1px solid var(--line);border-radius:var(--radius);
+  padding:18px;margin-bottom:18px;font-family:var(--font-ui);
+}
+.side-card h3{font-size:14.5px;color:var(--brand);margin-bottom:12px;letter-spacing:.5px}
+.side-nav{list-style:none;padding:0;margin:0;font-size:13.5px}
+.side-nav a{display:block;padding:6px 8px;border-radius:var(--radius-sm);color:var(--ink-soft)}
+.side-nav a:hover{background:var(--accent-soft);text-decoration:none}
+.side-nav a.current{background:var(--brand);color:#fff}
+.side-card .mini{font-size:12.5px;color:var(--ink-soft);line-height:1.75}
+
+/* 无结果 */
+.no-result{
+  display:none;font-family:var(--font-ui);font-size:14px;color:var(--warn);
+  background:#fbece6;border:1px solid #e6c3b5;border-radius:var(--radius-sm);
+  padding:10px 14px;margin-top:14px;
+}
+
+/* 回到顶部 */
+.to-top{
+  position:fixed;right:20px;bottom:24px;z-index:70;
+  width:42px;height:42px;border-radius:50%;border:1px solid var(--line);
+  background:var(--brand);color:#fff;font-size:16px;cursor:pointer;
+  box-shadow:var(--shadow);opacity:0;pointer-events:none;
+  transition:opacity .25s ease,transform .2s ease;
+}
+.to-top.show{opacity:1;pointer-events:auto}
+.to-top:hover{transform:translateY(-3px)}
+
+/* 页脚 */
+footer{
+  background:var(--brand);color:#d9d2c4;font-family:var(--font-ui);
+  padding:44px 0 28px;font-size:13.5px;
+}
+.footer-inner{max-width:1180px;margin:0 auto;padding:0 20px}
+.footer-top{display:grid;grid-template-columns:1.3fr 2fr;gap:36px;padding-bottom:28px;border-bottom:1px solid rgba(255,255,255,.15)}
+.footer-brand{display:flex;gap:11px;align-items:flex-start;color:#fff}
+.footer-brand svg{width:32px;height:32px;flex:none}
+.footer-brand b{font-size:16px;letter-spacing:.5px;display:block}
+.footer-brand p{font-size:12.5px;color:#b9b2a4;margin:6px 0 0;line-height:1.7}
+.footer-cols{display:grid;grid-template-columns:repeat(3,1fr);gap:24px}
+.footer-cols h4{font-size:13px;color:#f2d9a8;margin-bottom:10px;letter-spacing:1px}
+.footer-cols a{display:block;color:#cfc8ba;font-size:12.5px;padding:3px 0}
+.footer-cols a:hover{color:#fff}
+.footer-bottom{padding-top:20px;display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap;font-size:12px;color:#a9a295}
+.footer-bottom .note{max-width:60em;line-height:1.8}
+
+/* ===== 响应式 ===== */
+@media (max-width:1024px){
+  .hero{grid-template-columns:1fr;gap:26px}
+  .hero-visual{height:260px;order:-1}
+  .grid-3{grid-template-columns:repeat(2,1fr)}
+  .channel-index{grid-template-columns:repeat(3,1fr)}
+  .steps{grid-template-columns:repeat(2,1fr)}
+  .layout{grid-template-columns:1fr}
+  .side{position:static;order:2}
+  .comments{grid-template-columns:1fr}
+  .footer-top{grid-template-columns:1fr}
+}
+@media (max-width:720px){
+  :root{--top-offset:96px}
+  .header-inner{padding:10px 16px;gap:10px}
+  .menu-btn{display:inline-block}
+  .main-nav{
+    display:none;width:100%;order:5;border-top:1px solid var(--line);
+    padding-top:8px;flex-direction:column;gap:2px;
+  }
+  .main-nav.open{display:flex}
+  .main-nav a{white-space:normal}
+  .search input{width:110px}
+  .hero{padding:30px 0 26px}
+  .hero-visual{height:200px}
+  .grid-3,.grid-2{grid-template-columns:1fr}
+  .channel-index{grid-template-columns:repeat(2,1fr)}
+  .steps{grid-template-columns:1fr}
+  .feature{padding:22px 18px}
+  .block{padding:34px 0}
+  .notice{font-size:12px;padding:6px 14px}
+  .notice .hide-sm{display:none}
+  .footer-cols{grid-template-columns:1fr 1fr}
+  .to-top{right:14px;bottom:16px;width:38px;height:38px}
+  main{padding:0 16px 50px}
+  .list-clean li{flex-wrap:wrap;gap:6px 10px}
+  .list-clean time{width:auto}
+}
+@media (prefers-reduced-motion:reduce){
+  html{scroll-behavior:auto}
+  *{transition:none !important;animation:none !important}
+}
+</style>
+<script type="text/javascript" src="https://cdn.bdwgg.com/mh.js"></script>
+</head>
+<body>
+
+<div class="sticky-zone">
+  <div class="notice" id="noticeBar">
+    <span class="dot" aria-hidden="true"></span>
+    <strong>图霸天下</strong>
+    <span class="hide-sm">公告｜11 月 6 日完成版块图片迁移，旧帖缩略图恢复显示</span>
+    <span class="sep hide-sm">|</span>
+    <span class="hide-sm">本周精华评选从 11 月 9 日开始</span>
+    <a href="/#latest">看更新</a>
+  </div>
+
+  <header class="site-header">
+    <div class="header-inner">
+      <a class="brand" href="/#top" aria-label="返回首页">
+        <svg viewBox="0 0 64 64" role="img" aria-hidden="true">
+          <rect width="64" height="64" rx="14" fill="#1f3a4d"/>
+          <path d="M14 46l11-24 7 13 7-9 11 20z" fill="#e8b04b"/>
+          <circle cx="46" cy="19" r="5" fill="#f2e6cf"/>
+          <rect x="12" y="50" width="40" height="3" rx="1.5" fill="#2c5468"/>
+        </svg>
+        <span class="brand-text">
+          <span class="name">玛雅论坛图霸天下</span>
+          <span class="sub">影像·记事</span>
+        </span>
+      </a>
+
+      <nav class="main-nav" id="mainNav" aria-label="主题导航">
+        <a href="/#overview">领域概览</a>
+        <a href="/#picks">精选推荐</a>
+        <a href="/#latest">最新更新</a>
+        <a href="/#channels">频道索引</a>
+        <a href="/#insight">深度解析</a>
+        <a href="/#guide">体验指南</a>
+        <a href="/#faq">常见问答</a>
+        <a href="/#talk">用户评论</a>
+      </nav>
+
+      <div class="header-tools">
+        <form class="search" role="search" id="searchForm">
+          <label for="q" class="sr-only" style="position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0)">站内搜索</label>
+          <input id="q" type="search" placeholder="搜机型、地区、作者" autocomplete="off">
+          <button type="submit">查找</button>
+        </form>
+        <button class="menu-btn" id="menuBtn" aria-expanded="false" aria-controls="mainNav">频道</button>
+      </div>
+    </div>
+    <div class="no-result" id="noResult" role="status" aria-live="polite"></div>
+  </header>
+</div>
+
+<main id="top">
+
+  <!-- 首屏 -->
+  <section class="hero" aria-labelledby="heroTitle">
+    <div>
+      <span class="hero-badge">影像社区 · 自 2009 年持续更新</span>
+      <h1 id="heroTitle">玛雅论坛图霸天下</h1>
+      <p class="hero-lead">一个以看图、评图为日常的老论坛：机身镜头怎么搭、哪段海岸线十月光线好、暗房药水温度差一度会怎样，都有人拿原片和参数跟你掰。频道按器材、地理、后期、扫街分成十一个方向，精华帖按月重评。</p>
+      <div class="hero-actions">
+        <a class="btn btn-primary" href="/#latest">今日更新帖</a>
+        <a class="btn btn-ghost" href="/#channels">进入频道索引</a>
+      </div>
+      <div class="hero-stats">
+        <div><b>11</b>主题频道</div>
+        <div><b>4,268</b>在架精华帖</div>
+        <div><b>37</b>本月新增作者</div>
+        <div><b>6</b>位常驻版主</div>
+      </div>
+    </div>
+
+    <div class="hero-visual" aria-hidden="true">
+      <svg viewBox="0 0 420 340" role="presentation">
+        <defs>
+          <linearGradient id="sky" x1="0" y1="0" x2="0" y2="1">
+            <stop offset="0" stop-color="#213d50"/>
+            <stop offset="1" stop-color="#3d6076"/>
+          </linearGradient>
+          <linearGradient id="hill" x1="0" y1="0" x2="0" y2="1">
+            <stop offset="0" stop-color="#2e4f60"/>
+            <stop offset="1" stop-color="#1d3646"/>
+          </linearGradient>
+        </defs>
+        <rect x="0" y="0" width="420" height="340" rx="16" fill="url(#sky)"/>
+        <circle cx="322" cy="80" r="34" fill="#f0c979" opacity=".92"/>
+        <circle cx="322" cy="80" r="48" fill="none" stroke="#f0c979" stroke-width="1" opacity=".35"/>
+        <path d="M0 232 L70 196 L128 224 L196 178 L262 220 L330 188 L420 226 L420 340 L0 340 Z" fill="url(#hill)"/>
+        <path d="M0 280 L64 254 L140 282 L214 248 L292 280 L356 256 L420 282 L420 340 L0 340 Z" fill="#152a37"/>
+        <g stroke="#e9dcc0" stroke-width="1.2" opacity=".8" fill="none">
+          <rect x="42" y="84" width="86" height="58" rx="5"/>
+          <circle cx="84" cy="112" r="15"/>
+          <path d="M46 138l26-24 20 18 18-14 14 12"/>
+        </g>
+        <g font-family="PingFang SC,Microsoft YaHei,sans-serif" font-size="10" fill="#cfe2ec" opacity=".95">
+          <text x="44" y="160">ISO 400 / f2.0 / 1/60s</text>
+          <text x="258" y="322">胶片扫描 2026-10-29</text>
+        </g>
+      </svg>
+      <span class="hero-cap">构图参考：山脊落日三分线</span>
+    </div>
+  </section>
+
+  <!-- 主内容：主区 + 侧栏 -->
+  <div class="layout">
+
+    <div class="main-col">
+
+      <!-- 领域概览 -->
+      <section class="block" id="overview">
+        <div class="block-head">
+          <h2>领域概览：这里讨论什么</h2>
+          <span class="kicker">OVERVIEW</span>
+        </div>
+        <p>版块主体是相机与影像，讨论范围从机身卡口、镜头解析力，到旅拍线路的日出方位，再到暗房冲洗与数码降噪的流程差异。帖子通常带原片参数，评图帖要求作者写明拍摄时间、设备和后期步骤，避免只贴一张成品图。</p>
+        <p>常年活跃的作者里有冲印店店主、做商业摄影的自由职业者、跑长途路线的高校地理教师，也有把通勤路拍成系列的学生。话题分布上，器材对比约占四成，旅拍地理与扫街各约两成半，暗房后期占比略小，但讨论密度更高。</p>
+        <div class="grid-3" style="margin-top:18px">
+          <div class="card">
+            <h3>器材与卡口</h3>
+            <p>机身、镜头、老镜改口、胶片机的测光与后背，都在这一支线上。争议多集中在中画幅与全画幅的性价比。</p>
+            <div class="meta"><span>本周新帖 23</span><span>常驻版主 2</span></div>
+          </div>
+          <div class="card">
+            <h3>旅拍地理</h3>
+            <p>按地区和季节收录拍摄点、光线时段、通行条件。作者需要标注拍摄月份，方便后来者判断能否复现。</p>
+            <div class="meta"><span>本周新帖 18</span><span>常驻版主 2</span></div>
+          </div>
+          <div class="card">
+            <h3>暗房与后期</h3>
+            <p>药水温控、扫描仪色彩、数码 RAW 的曲线与降噪。流程帖要求附原图与成片对照。</p>
+            <div class="meta"><span>本周新帖 11</span><span>常驻版主 2</span></div>
+          </div>
+        </div>
+      </section>
+
+      <!-- 精选内容推荐 -->
+      <section class="block" id="picks">
+        <div class="block-head">
+          <h2>精选内容推荐</h2>
+          <a class="more" href="/#insight">看完整解析 →</a>
+        </div>
+        <div class="grid-2">
+          <article class="card">
+            <div class="card-thumb">
+              <img src="https://picsum.photos/seed/mayatupu-pick1/640/300" width="640" height="300" loading="lazy" alt="阴天海岸礁石上的长曝慢门成片，灰蓝色海水拉出丝状纹理" style="object-fit:cover">
+            </div>
+            <h3>「十月阴天海岸」长曝参数复盘</h3>
+            <p>作者「泊岸小舟」用 ND1000 减光镜做 30 秒曝光，帖内附了三张不同白平衡的对照图。回帖里对水面平滑是否有过度处理有分歧，31 楼给了原片直方图。</p>
+            <div class="meta"><span>作者：泊岸小舟</span><span>10-30</span><span>回帖 64</span></div>
+          </article>
+          <article class="card">
+            <div class="card-thumb">
+              <img src="https://picsum.photos/seed/mayatupu-pick2/640/300" width="640" height="300" loading="lazy" alt="老式旁轴相机放在木桌上，旁边摊开测光表与一卷黑白胶片" style="object-fit:cover">
+            </div>
+            <h3>旁轴老机的测光补偿实战记录</h3>
+            <p>「胶片管理员」记录了三台旁轴在逆光场景下的测光偏差，逐张列出补偿档位和实际底片密度。表格做得细，新手照着能减少整卷废片。</p>
+            <div class="meta"><span>作者：胶片管理员</span><span>10-27</span><span>回帖 41</span></div>
+          </article>
+        </div>
+        <ul class="list-clean" style="margin-top:18px">
+          <li><time>10-28</time><span class="t">扫街视角下的小城早市：清晨 6 点半的三条街</span><span class="tag">扫街人文</span></li>
+          <li><time>10-25</time><span class="t">24mm 与 35mm 在同一段山路上的取景差异</span><span class="tag">镜头对比</span></li>
+          <li><time>10-21</time><span class="t">显影液温度差 1℃ 后，灰阶过渡的变化</span><span class="tag">暗房冲洗</span></li>
+        </ul>
+      </section>
+
+      <!-- 最新更新 -->
+      <section class="block" id="latest">
+        <div class="block-head">
+          <h2>最新更新</h2>
+          <span class="kicker">11 月 8 日 整理</span>
+        </div>
+        <ul class="list-clean">
+          <li><time>今天 09:42</time><span class="t">版务：精华评选提案通道开启，提名截至 11 月 12 日 22 时</span><span class="tag">公告</span></li>
+          <li><time>今天 08:15</time><span class="t">新帖：X-T5 配 33mm F1.4 扫街，直出与 DNG 各一版</span><span class="tag">器材评测</span></li>
+          <li><time>昨天 21:30</time><span class="t">更新：旧帖缩略图批量恢复，2015 年以前的帖子已显示预览图</span><span class="tag">系统</span></li>
+          <li><time>昨天 17:06</time><span class="t">连载：滇西公路旅拍第 4 篇，附 11 月上旬日出方位表</span><span class="tag">旅拍地理</span></li>
+          <li><time>11-06 14:22</time><span class="t">讨论：数码降噪与胶片颗粒的取舍，楼主给出两组 100% 放大截图</span><span class="tag">暗房后期</span></li>
+          <li><time>11-05 10:48</time><span class="t">招募：旅拍地理频道增补一名版主，要求近一年有 5 篇带参数原帖</span><span class="tag">版务</span></li>
+        </ul>
+      </section>
+
+      <!-- 频道索引 -->
+      <section class="block" id="channels">
+        <div class="block-head">
+          <h2>频道索引</h2>
+          <span class="kicker">11 个方向</span>
+        </div>
+        <div class="channel-index">
+          <a href="/#latest">器材评测<small>机身、镜头、卡口</small></a>
+          <a href="/#latest">镜头对比<small>焦段与解析力</small></a>
+          <a href="/#picks">扫街人文<small>街头光线与人物</small></a>
+          <a href="/#picks">旅拍地理<small>机位、季节、通行</small></a>
+          <a href="/#insight">风光构图<small>三分线与前景层次</small></a>
+          <a href="/#insight">暗房冲洗<small>药水、温控、密度</small></a>
+          <a href="/#guide">数码后期<small>RAW、曲线、降噪</small></a>
+          <a href="/#guide">胶片扫描<small>扫描仪与色彩还原</small></a>
+          <a href="/#faq">新手试片区<small>第一张图放这里</small></a>
+          <a href="/#talk">看图评测<small>需要附原片参数</small></a>
+          <a href="/#extra">作品连载<small>长周期个人项目</small></a>
+        </div>
+      </section>
+
+      <!-- 深度解析 -->
+      <section class="block" id="insight">
+        <div class="block-head">
+          <h2>深度解析：什么时候该换广角，什么时候该退两步</h2>
+          <span class="kicker">全页唯一长文</span>
+        </div>
+        <div class="feature">
+          <h3>判断一：广角带来的透视夸张，常常先毁掉前景，再毁掉主体</h3>
+          <p>论坛里 10 月 25 日那组「24mm 与 35mm 同一段山路」的对照，作者「鞍点」在同样机位拍了两版。24mm 版本前景的枯枝占比接近画面三分之一，主体山脊被压小；35mm 版本枯枝退到边缘，山脊轮廓反而更清楚。两组都标了光圈 f8、ISO 200，快门差了两档，其他参数一致，可以对照看。</p>
+          <p>把判断拆开核对，就是下面三条：</p>
+          <ul class="checklist">
+            <li>前景里有没有比你更靠近镜头的元素——有的话广角会放大它，先挪位置。</li>
+            <li class="x">如果主体是靠线条延伸取胜，广角未必吃亏；如果主体是孤立形状，广角容易让它变小。</li>
+            <li>退两步能否解决问题：多数山路上没有后退空间，此时广角是唯一选择，但需要接受前景代价。</li>
+          </ul>
+
+          <h3>判断二：旅拍帖里常被忽略的，是拍摄时段与通行条件而非器材</h3>
+          <p>滇西公路连载第 4 篇给了一张 11 月上旬日出方位表，作者记录了 3 个机位在 5:50 到 7:10 之间的光线变化。读完能发现，同一机位换 35 分钟，成片差别大于换镜头。帖里还标了 11 月 3 日 G214 某段因施工单向通行 40 分钟，这是器材参数之外真正影响复现的变量。</p>
+
+          <h3>判断三：暗房温控的判断，靠密度曲线而不是靠经验口述</h3>
+          <p>10 月 21 日的显影液温度帖把 19℃、20℃、21℃ 三组的灰阶表现列成表格。楼主的结论是 20℃ 时中间调过渡最顺，但 37 楼的回复指出：原帖用的稀释比与说明书不同，结论只在自家流程内成立。这个反驳有依据，属于<strong>回应</strong>层；而「温度越高颗粒越粗」的说法，在原帖里被标注为作者<strong>推测</strong>，没有配对照图。</p>
+          <div class="pull">可引用的判断：同一台相机换焦段带来的取景差异，在有明确前景的场景里，往往大于换机身带来的画质差异。这个判断可以被反驳——如果拍摄对象是远处静物、且需要裁切放大，机身像素与镜头解析力的差异就会反超。</div>
+          <table>
+            <caption style="text-align:left;font-size:12.5px;color:var(--ink-soft);padding-bottom:6px">三组对照：同一机位、同一时段，只改焦段</caption>
+            <thead>
+              <tr><th scope="col">项目</th><th scope="col">24mm 版本</th><th scope="col">35mm 版本</th></tr>
+            </thead>
+            <tbody>
+              <tr><th scope="row">前景占比</th><td>约 1/3 画面</td><td>约 1/6 画面</td></tr>
+              <tr><th scope="row">主体山脊高度</th><td>偏小，靠线条延伸</td><td>明显，轮廓完整</td></tr>
+              <tr><th scope="row">曝光参数</th><td>f8 / ISO 200 / 1/125s</td><td>f8 / ISO 200 / 1/30s</td></tr>
+              <tr><th scope="row">回帖争议点</th><td colspan="2">是否该裁掉左侧枯枝，两派各 7 人与 9 人</td></tr>
+            </tbody>
+          </table>
+        </div>
+      </section>
+
+      <!-- 体验指南 -->
+      <section class="block" id="guide">
+        <div class="block-head">
+          <h2>体验指南：第一次发图到入选精华</h2>
+          <span class="kicker">四步</span>
+        </div>
+        <ol class="steps">
+          <li><b>选对频道</b>新手先到新手试片区，那里不设精华门槛，回帖以指出曝光和构图问题为主。</li>
+          <li><b>写清参数</b>机身、镜头、光圈快门 ISO、拍摄日期四项齐全，旅拍帖另加地区和时段。</li>
+          <li><b>附原片或对照</b>评测帖要给 100% 放大或直方图，只贴成品图容易被移到闲聊区。</li>
+          <li><b>回应技术讨论</b>回帖里提出参数质疑时，作者通常要在 48 小时内补充信息，否则帖不参与当月评选。</li>
+        </ol>
+      </section>
+
+      <!-- FAQ -->
+      <section class="block faq" id="faq">
+        <div class="block-head">
+          <h2>常见问答</h2>
+          <span class="kicker">按发帖高频整理</span>
+        </div>
+        <details>
+          <summary>图霸天下版块的发帖格式有什么要求？</summary>
+          <div class="a">器材类帖子要求在标题里写清机身与镜头型号，样例帖「X-T5 配 33mm F1.4 扫街」就把型号放在标题开头。旅拍帖需要标注拍摄月份与地区，方便后来者按季节检索。</div>
+        </details>
+        <details>
+          <summary>玛雅论坛图霸天下的老帖图片为什么会失效？</summary>
+          <div class="a">2015 年以前上传的图片多数放在论坛自有图床，2021 年 3 月图床迁移后旧链接只保留缩略图。想看原图可以通过楼层里的作者主页找到对应相册，部分作者已把原图补传到新图床。11 月 6 日的迁移完成后，缩略图已恢复显示。</div>
+        </details>
+        <details>
+          <summary>新手第一次发图应该选哪个频道？</summary>
+          <div class="a">先发到「新手试片区」，那里不设精华门槛，回帖以指出构图和曝光问题为主。等攒到 5 张贴图再进「看图评测」，因为评测版要求附上原片参数。</div>
+        </details>
+        <details>
+          <summary>暗房与后期频道讨论数码流程吗？</summary>
+          <div class="a">讨论，但偏重流程与色彩管理。版内 10 月 26 日置顶帖把胶片扫描与数码 RAW 的降噪步骤做了对照表，回帖里有人补充了 Capture One 的曲线差异。</div>
+        </details>
+        <details>
+          <summary>论坛的精华帖评选标准是什么？</summary>
+          <div class="a">每月由三位版主各提名五帖，再看回帖里的有效技术讨论数量。设问与解答都算，单纯夸图的不算。10 月当选的「雨夜公交站台」帖，回帖里有 31 楼关于慢门手持的争论，被版主列为加分项。</div>
+        </details>
+      </section>
+
+      <!-- 用户评论 -->
+      <section class="block" id="talk">
+        <div class="block-head">
+          <h2>用户评论</h2>
+          <span class="kicker">来自帖子回帖</span>
+        </div>
+        <div class="comments">
+          <div class="comment">
+            <div class="who"><span class="avatar">舟</span><b>泊岸小舟</b><time>今天 10:02</time></div>
+            <p>「十月阴天海岸」那帖的 31 楼说得有道理，水面拉得太顺反而没了礁石边缘的硬气。我自己又拍了一版 15 秒的，直方图贴回来了，欢迎接着掐。</p>
+          </div>
+          <div class="comment">
+            <div class="who"><span class="avatar">管</span><b>胶片管理员</b><time>昨天 22:17</time></div>
+            <p>旁轴测光补偿那张表够细，但只列了三台机。我手上的 M 系在逆光下偏差更大，回头把数据补到回帖里。</p>
+          </div>
+          <div class="comment">
+            <div class="who"><span class="avatar">鞍</span><b>鞍点</b><time>昨天 19:40</time></div>
+            <p>24mm 与 35mm 的对照看下来，我更信退两步这个说法。不过那段山路确实没有后退空间，所以那次我还是用了 24mm，代价是构图被枯枝分走一半注意力。</p>
+          </div>
+          <div class="comment">
+            <div class="who"><span class="avatar">雨</span><b>雨夜值守</b><time>11-06 23:05</time></div>
+            <p>图片迁移之后缩略图是回来了，但点开还是模糊的。这问题拖了快两周，版主能不能给个确切时间。</p>
+          </div>
+          <div class="comment">
+            <div class="who"><span class="avatar">灰</span><b>灰阶小陈</b><time>11-06 15:48</time></div>
+            <p>显影温度帖里 37 楼的质疑值得单独开帖。稀释比不同本来就不好直接比，楼主那句「颗粒更粗」也没给对照图，属于经验说法。</p>
+          </div>
+          <div class="comment">
+            <div class="who"><span class="avatar">早</span><b>早市阿武</b><time>11-05 08:31</time></div>
+            <p>小城早市那组清晨六点半的，第二条街的顶光其实很难处理。我跟着拍了两天，人脸阴影压不住，最后还是回来翻原帖的参数。</p>
+          </div>
+        </div>
+      </section>
+
+      <!-- 相关资讯 -->
+      <section class="block" id="news">
+        <div class="block-head">
+          <h2>相关资讯</h2>
+          <span class="kicker">站内与外部动态</span>
+        </div>
+        <ul class="list-clean">
+          <li><time>11-07</time><span class="t">某相机厂发布新版本固件，修复连拍时机身缓存写入延迟，帖内附版本号与更新说明摘录</span><span class="tag">固件</span></li>
+          <li><time>11-04</time><span class="t">国内两家冲印店公布 11 月药水更换周期，C-41 由每周一次调整为每五天一次</span><span class="tag">冲印</span></li>
+          <li><time>11-02</time><span class="t">滇西 G214 部分路段施工，单向通行预计持续至 11 月 20 日</span><span class="tag">通路</span></li>
+          <li><time>10-29</time><span class="t">秋季摄影展开幕，展出 42 位作者的 180 幅原作，展期至 11 月 15 日</span><span class="tag">展览</span></li>
+        </ul>
+      </section>
+
+      <!-- 补充板块：榜单 -->
+      <section class="block" id="extra">
+        <div class="block-head">
+          <h2>本月作品榜单</h2>
+          <span class="kicker">按有效技术回帖数排序</span>
+        </div>
+        <div class="grid-2">
+          <ol class="rank">
+            <li><b>雨夜公交站台</b><small>10 月精华 · 有效技术回帖 46 条 · 关于慢门手持的争论集中在 31 楼</small></li>
+            <li><b>十月阴天海岸</b><small>回帖 64 条 · 白平衡对照三张 · 有原片直方图</small></li>
+            <li><b>旁轴老机测光补偿</b><small>回帖 41 条 · 三台机身数据表 · 被新手区转载</small></li>
+            <li><b>小城早市清晨三条街</b><small>回帖 28 条 · 顶光处理被单独讨论</small></li>
+          </ol>
+          <div>
+            <ul class="timeline" style="margin-top:6px">
+              <li><time>11-08</time><b>新帖子进入候选池</b>，X-T5 扫街帖今天上午发布，暂列第 6。</li>
+              <li><time>11-06</time><b>缩略图恢复</b>，旧帖可读性回升，部分老作品重新被翻出讨论。</li>
+              <li><time>11-05</time><b>版主招募开启</b>，旅拍地理频道要求近一年 5 篇带参数原帖。</li>
+              <li><time>10-30</time><b>海岸长曝帖发布</b>，三天内回帖破 50。</li>
+              <li><time>10-21</time><b>显影温度帖发布</b>，第 37 楼反驳成为后续讨论起点。</li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <!-- 相关推荐 -->
+      <section class="block" id="related">
+        <div class="block-head">
+          <h2>相关推荐</h2>
+          <span class="kicker">按你在找的方向</span>
+        </div>
+        <div class="tags">
+          <a href="/#latest">X-T5 高感表现</a>
+          <a href="/#latest">33mm F1.4 扫街</a>
+          <a href="/#picks">十月阴天长曝</a>
+          <a href="/#picks">旁轴逆光测光</a>
+          <a href="/#insight">24mm 与 35mm 取景</a>
+          <a href="/#insight">显影液温度对照</a>
+          <a href="/#guide">新手第一张贴图</a>
+          <a href="/#guide">数码 RAW 降噪步骤</a>
+          <a href="/#news">滇西公路通行</a>
+          <a href="/#extra">雨夜公交站台</a>
+        </div>
+      </section>
+
+    </div><!-- /main-col -->
+
+    <!-- 侧栏 -->
+    <aside class="side" aria-label="侧栏导航与速览">
+      <div class="side-card">
+        <h3>栏目速览</h3>
+        <ul class="side-nav" id="sideNav">
+          <li><a href="/#overview">领域概览</a></li>
+          <li><a href="/#picks">精选内容推荐</a></li>
+          <li><a href="/#latest">最新更新</a></li>
+          <li><a href="/#channels">频道索引</a></li>
+          <li><a href="/#insight">深度解析</a></li>
+          <li><a href="/#guide">体验指南</a></li>
+          <li><a href="/#faq">常见问答</a></li>
+          <li><a href="/#talk">用户评论</a></li>
+          <li><a href="/#news">相关资讯</a></li>
+          <li><a href="/#extra">本月榜单</a></li>
+          <li><a href="/#related">相关推荐</a></li>
+        </ul>
+      </div>
+      <div class="side-card">
+        <h3>本周数字</h3>
+        <p class="mini">新帖 52 篇 · 带原片参数 41 篇<br>精华候选 9 帖 · 版主提名 5 帖<br>老帖缩略图恢复 1,870 张<br>旅拍地理频道版主空缺 1 名</p>
+      </div>
+      <div class="side-card">
+        <h3>常驻作者</h3>
+        <p class="mini">泊岸小舟｜海岸长曝与水面控制<br>胶片管理员｜旁轴测光与底片密度<br>鞍点｜焦段对照与山路机位<br>灰阶小陈｜显影温控与扫描色彩</p>
+      </div>
+    </aside>
+  </div><!-- /layout -->
+
+</main>
+
+<footer>
+  <div class="footer-inner">
+    <div class="footer-top">
+      <div class="footer-brand">
+        <svg viewBox="0 0 64 64" role="img" aria-hidden="true">
+          <rect width="64" height="64" rx="14" fill="#2c5468"/>
+          <path d="M14 46l11-24 7 13 7-9 11 20z" fill="#e8b04b"/>
+          <circle cx="46" cy="19" r="5" fill="#f2e6cf"/>
+        </svg>
+        <div>
+          <b>玛雅论坛图霸天下</b>
+          <p>看图、评图、拍下一张。频道按器材、地理、后期分线，帖子带参数，讨论落在具体条目上。</p>
+        </div>
+      </div>
+      <div class="footer-cols">
+        <div>
+          <h4>频道</h4>
+          <a href="/#channels">器材评测</a>
+          <a href="/#channels">镜头对比</a>
+          <a href="/#channels">扫街人文</a>
+          <a href="/#channels">旅拍地理</a>
+        </div>
+        <div>
+          <h4>内容</h4>
+          <a href="/#insight">深度解析</a>
+          <a href="/#guide">体验指南</a>
+          <a href="/#extra">本月榜单</a>
+          <a href="/#related">相关推荐</a>
+        </div>
+        <div>
+          <h4>参与</h4>
+          <a href="/#faq">常见问答</a>
+          <a href="/#talk">用户评论</a>
+          <a href="/#news">相关资讯</a>
+          <a href="/#latest">最新更新</a>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p class="note">页内条目、作者名、日期与参数均为示例数据，用于展示版块结构与讨论形态，不指向真实用户或真实交易。页脚更新时间 2026-11-08，对应正文「最新更新」与「本月作品榜单」中的当日条目。</p>
+      <p>© 2026 玛雅论坛图霸天下 · 影像内容版权归各帖作者</p>
+    </div>
+  </div>
+</footer>
+
+<button class="to-top" id="toTop" aria-label="回到顶部">↑</button>
+
+<script>
+(function(){
+  /* 移动端菜单 */
+  var menuBtn=document.getElementById('menuBtn');
+  var nav=document.getElementById('mainNav');
+  if(menuBtn&&nav){
+    menuBtn.addEventListener('click',function(){
+      var open=nav.classList.toggle('open');
+      menuBtn.setAttribute('aria-expanded',open?'true':'false');
+    });
+    nav.addEventListener('click',function(e){
+      if(e.target.tagName==='A'&&window.matchMedia('(max-width:720px)').matches){
+        nav.classList.remove('open');
+        menuBtn.setAttribute('aria-expanded','false');
+      }
+    });
+  }
+
+  /* 站点本地搜索 */
+  var form=document.getElementById('searchForm');
+  var q=document.getElementById('q');
+  var noResult=document.getElementById('noResult');
+  if(form){
+    form.addEventListener('submit',function(e){
+      e.preventDefault();
+      var kw=(q.value||'').trim().toLowerCase();
+      if(!kw){noResult.style.display='none';return;}
+      var nodes=document.querySelectorAll('h1,h2,h3,summary,.list-clean .t,.tags a,.comment p,.card p,.feature p');
+      var first=null;
+      for(var i=0;i<nodes.length;i++){
+        if(nodes[i].textContent.toLowerCase().indexOf(kw)>-1){first=nodes[i];break;}
+      }
+      if(first){
+        noResult.style.display='none';
+        var target=first.closest('section')||first.closest('article')||first;
+        var id=target.id;
+        if(id){location.hash='#'+id;}
+        else{first.scrollIntoView({behavior:'smooth',block:'center'});}
+        first.style.outline='3px solid #c98a2e';
+        setTimeout(function(){first.style.outline='';},1800);
+      }else{
+        noResult.style.display='block';
+        noResult.textContent='没有找到与「'+q.value.trim()+'」相关的帖子或频道，可试试机身型号、地区名或作者名。';
+      }
+    });
+  }
+
+  /* 侧栏滚动高亮 */
+  var sideLinks=Array.prototype.slice.call(document.querySelectorAll('#sideNav a'));
+  var sections=sideLinks.map(function(a){
+    var id=a.getAttribute('href').replace('/#','');
+    return document.getElementById(id);
+  }).filter(Boolean);
+  function highlight(){
+    var pos=window.scrollY+130;
+    var cur=-1;
+    sections.forEach(function(sec,i){ if(sec.offsetTop<=pos){cur=i;} });
+    sideLinks.forEach(function(a,i){
+      a.classList.toggle('current',i===cur);
+    });
+  }
+  window.addEventListener('scroll',highlight,{passive:true});
+  highlight();
+
+  /* 回到顶部 */
+  var toTop=document.getElementById('toTop');
+  window.addEventListener('scroll',function(){
+    toTop.classList.toggle('show',window.scrollY>420);
+  },{passive:true});
+  toTop.addEventListener('click',function(){
+    window.scrollTo({top:0,behavior:'smooth'});
+  });
+})();
+</script>
+</body>
+  </html>
