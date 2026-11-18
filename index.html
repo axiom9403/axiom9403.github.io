@@ -1,0 +1,1094 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>西西人体系艺人术-体系拆解与术语对照</title>
+<meta name="description" content="西西人体系艺人术是一套围绕人体结构与艺能训练的分层体系。这里按骨架参照、动线控制、呼吸节律、术语对照四条线拆解，附2026年11月更新条目、常见问答与读者批注，便于逐项核对。">
+<meta name="keywords" content="西西人体系艺人术">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%231b3a4a'/%3E%3Ccircle cx='24' cy='22' r='7' fill='none' stroke='%23e8b04b' stroke-width='4'/%3E%3Cpath d='M32 34 v18 M32 42 l14 10 M32 42 l-14 10' stroke='%23f5f1e8' stroke-width='4' stroke-linecap='round' fill='none'/%3E%3C/svg%3E">
+<style>
+:root{
+  --ink:#1b2a33;
+  --ink-soft:#46606d;
+  --paper:#f5f1e8;
+  --paper-2:#fffdf7;
+  --line:#d8cfbe;
+  --main:#1b3a4a;
+  --main-2:#2c5a6e;
+  --accent:#c8871f;
+  --accent-soft:#f0d9a8;
+  --teal:#2f7d6d;
+  --danger:#9c4a3c;
+  --radius:10px;
+  --radius-lg:16px;
+  --shadow:0 2px 10px rgba(27,42,51,.08);
+  --shadow-lg:0 10px 30px rgba(27,42,51,.12);
+  --fs-xs:.78rem;
+  --fs-sm:.88rem;
+  --fs-base:1rem;
+  --fs-lg:1.12rem;
+  --fs-h3:1.2rem;
+  --fs-h2:1.55rem;
+  --fs-h1:2.25rem;
+  --sp:1rem;
+  --header-h:96px;
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth;scroll-padding-top:150px}
+body{
+  margin:0;
+  background:var(--paper);
+  color:var(--ink);
+  font-family:"Noto Serif SC","Songti SC","Source Han Serif SC",Georgia,"Times New Roman",serif;
+  font-size:var(--fs-base);
+  line-height:1.75;
+  -webkit-font-smoothing:antialiased;
+}
+h1,h2,h3,h4{font-family:"Noto Sans SC","PingFang SC","Microsoft YaHei",system-ui,sans-serif;line-height:1.35;margin:0 0 .6em}
+p{margin:0 0 1em}
+a{color:var(--main-2);text-decoration:none}
+a:hover{text-decoration:underline}
+ul,ol{margin:0 0 1em;padding-left:1.3em}
+li{margin:.3em 0}
+img{max-width:100%;display:block}
+button{font:inherit;cursor:pointer}
+:focus-visible{outline:3px solid var(--accent);outline-offset:2px;border-radius:4px}
+
+/* ---------- 吸顶公告 + 页头 ---------- */
+.sticky-wrap{position:sticky;top:0;z-index:50}
+.notice{
+  background:var(--main);
+  color:var(--paper-2);
+  font-size:var(--fs-sm);
+  padding:.5rem 1rem;
+  display:flex;gap:.75rem;align-items:center;justify-content:center;
+  flex-wrap:wrap;
+  text-align:center;
+  border-bottom:1px solid rgba(255,255,255,.15);
+}
+.notice .tag{
+  background:var(--accent);color:#231a08;
+  font-family:"Noto Sans SC",sans-serif;
+  font-weight:700;font-size:var(--fs-xs);
+  padding:.1rem .5rem;border-radius:999px;
+  letter-spacing:.04em;
+}
+.notice strong{font-weight:700;color:var(--accent-soft)}
+.site-header{
+  background:rgba(255,253,247,.96);
+  backdrop-filter:blur(6px);
+  border-bottom:1px solid var(--line);
+  box-shadow:var(--shadow);
+}
+.header-inner{
+  max-width:1180px;margin:0 auto;
+  padding:.7rem 1.2rem;
+  display:flex;align-items:center;gap:1rem;flex-wrap:wrap;
+}
+.brand{display:flex;align-items:center;gap:.6rem;min-width:0}
+.brand svg{flex:none;width:42px;height:42px}
+.brand-text{display:flex;flex-direction:column;line-height:1.15}
+.brand-text .logo-word{
+  font-family:"Noto Sans SC",sans-serif;
+  font-weight:800;font-size:1.12rem;letter-spacing:.06em;color:var(--main);
+}
+.brand-text .logo-sub{font-size:.7rem;color:var(--ink-soft);letter-spacing:.14em;font-family:"Noto Sans SC",sans-serif}
+.header-actions{margin-left:auto;display:flex;align-items:center;gap:.6rem}
+.search-box{display:flex;align-items:center;background:var(--paper);border:1px solid var(--line);border-radius:999px;padding:.2rem .3rem .2rem .8rem}
+.search-box input{
+  border:0;background:transparent;font:inherit;font-size:var(--fs-sm);
+  padding:.3rem .2rem;width:150px;color:var(--ink);min-width:0;
+}
+.search-box input:focus{outline:none}
+.search-box button{
+  border:0;background:var(--main);color:#fff;border-radius:999px;
+  padding:.35rem .8rem;font-size:var(--fs-xs);font-family:"Noto Sans SC",sans-serif;
+}
+.menu-toggle{
+  display:none;
+  border:1px solid var(--line);background:var(--paper-2);
+  border-radius:8px;padding:.4rem .6rem;
+  font-family:"Noto Sans SC",sans-serif;font-size:var(--fs-sm);color:var(--main);
+  align-items:center;gap:.4rem;
+}
+.menu-toggle .bars{display:inline-flex;flex-direction:column;gap:3px}
+.menu-toggle .bars i{width:16px;height:2px;background:var(--main);display:block;border-radius:2px}
+.main-nav{width:100%}
+.main-nav ul{
+  list-style:none;margin:0;padding:.2rem 0 0;
+  display:flex;flex-wrap:wrap;gap:.2rem;
+}
+.main-nav a{
+  display:inline-block;padding:.35rem .7rem;border-radius:8px;
+  font-family:"Noto Sans SC",sans-serif;font-size:var(--fs-sm);color:var(--ink-soft);
+}
+.main-nav a:hover{background:var(--accent-soft);color:var(--main);text-decoration:none}
+.search-feedback{font-size:var(--fs-xs);color:var(--danger);width:100%;padding:0 1.2rem .4rem;display:none}
+.search-feedback.show{display:block}
+
+/* ---------- 首屏 ---------- */
+.hero{
+  position:relative;overflow:hidden;
+  background:
+    radial-gradient(circle at 88% 12%, rgba(200,135,31,.16), transparent 45%),
+    linear-gradient(160deg,#1b3a4a 0%,#22505f 58%,#2c5a6e 100%);
+  color:var(--paper-2);
+}
+.hero-inner{
+  max-width:1180px;margin:0 auto;padding:3.4rem 1.2rem 3rem;
+  display:grid;grid-template-columns:1.15fr .85fr;gap:2.4rem;align-items:center;
+}
+.hero-eyebrow{
+  font-family:"Noto Sans SC",sans-serif;font-size:var(--fs-xs);letter-spacing:.22em;
+  color:var(--accent-soft);margin-bottom:.8rem;
+}
+.hero h1{
+  font-size:clamp(1.9rem,4.6vw,3rem);
+  color:#fff;letter-spacing:.06em;margin-bottom:.6rem;
+}
+.hero h1 .h1-mark{color:var(--accent-soft)}
+.hero-lead{font-size:var(--fs-lg);color:#e4ecef;max-width:34em;margin-bottom:1.4rem}
+.hero-actions{display:flex;gap:.7rem;flex-wrap:wrap}
+.btn{
+  display:inline-flex;align-items:center;gap:.4rem;
+  font-family:"Noto Sans SC",sans-serif;font-size:var(--fs-sm);font-weight:600;
+  padding:.6rem 1.1rem;border-radius:999px;border:1px solid transparent;
+  transition:transform .18s ease, background .18s ease;
+}
+.btn:hover{text-decoration:none;transform:translateY(-2px)}
+.btn-primary{background:var(--accent);color:#231a08}
+.btn-ghost{border-color:rgba(255,255,255,.5);color:#fff}
+.btn-ghost:hover{background:rgba(255,255,255,.12)}
+.hero-stats{
+  display:flex;gap:1.6rem;margin-top:1.8rem;flex-wrap:wrap;
+  font-family:"Noto Sans SC",sans-serif;
+}
+.hero-stats div{min-width:90px}
+.hero-stats b{display:block;font-size:1.4rem;color:var(--accent-soft)}
+.hero-stats span{font-size:var(--fs-xs);color:#c6d5db;letter-spacing:.05em}
+.hero-figure{position:relative;display:flex;justify-content:center}
+.hero-figure svg{width:100%;max-width:400px;height:auto}
+
+/* ---------- 布局 ---------- */
+.layout{
+  max-width:1180px;margin:0 auto;padding:2.4rem 1.2rem 3rem;
+  display:grid;grid-template-columns:minmax(0,1fr) 300px;gap:2.2rem;
+  align-items:start;
+}
+.main-col{min-width:0}
+.side-col{position:sticky;top:150px;display:flex;flex-direction:column;gap:1.2rem}
+section.block{
+  background:var(--paper-2);
+  border:1px solid var(--line);
+  border-radius:var(--radius-lg);
+  padding:1.6rem 1.5rem;
+  margin-bottom:1.8rem;
+  box-shadow:var(--shadow);
+  scroll-margin-top:150px;
+}
+section.block.tint{background:linear-gradient(180deg,#fffdf7,#f7f1e3)}
+.sec-head{display:flex;align-items:baseline;gap:.8rem;flex-wrap:wrap;margin-bottom:.4rem}
+.sec-head h2{font-size:var(--fs-h2);color:var(--main);margin:0}
+.sec-tag{
+  font-family:"Noto Sans SC",sans-serif;font-size:var(--fs-xs);
+  background:var(--accent-soft);color:#6a4a10;padding:.1rem .55rem;border-radius:999px;
+  letter-spacing:.06em;
+}
+.sec-note{color:var(--ink-soft);font-size:var(--fs-sm);margin-bottom:1.2rem}
+.sec-note b{color:var(--main)}
+
+/* 组件 */
+.grid-cards{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:1rem}
+.card{
+  border:1px solid var(--line);border-radius:var(--radius);background:#fff;
+  overflow:hidden;display:flex;flex-direction:column;
+  transition:transform .18s ease, box-shadow .18s ease;
+}
+.card:hover{transform:translateY(-3px);box-shadow:var(--shadow-lg)}
+.card img{width:100%;height:150px;object-fit:cover}
+.card-body{padding:.9rem 1rem 1rem;display:flex;flex-direction:column;gap:.35rem;flex:1}
+.card-body h3{font-size:var(--fs-h3);margin:0;color:var(--main)}
+.card-body p{margin:0;font-size:var(--fs-sm);color:var(--ink-soft)}
+.card-meta{
+  margin-top:auto;padding-top:.5rem;display:flex;gap:.6rem;flex-wrap:wrap;
+  font-size:var(--fs-xs);color:var(--ink-soft);font-family:"Noto Sans SC",sans-serif;
+}
+.card-meta .pill{background:var(--paper);border:1px solid var(--line);border-radius:999px;padding:0 .5rem}
+
+.compact-list{list-style:none;margin:0;padding:0;border-top:1px solid var(--line)}
+.compact-list li{
+  margin:0;padding:.75rem .2rem;border-bottom:1px dashed var(--line);
+  display:flex;gap:.8rem;align-items:baseline;flex-wrap:wrap;
+}
+.compact-list .date{
+  font-family:"Noto Sans SC",sans-serif;font-size:var(--fs-xs);
+  color:var(--main-2);background:var(--paper);border:1px solid var(--line);
+  border-radius:6px;padding:.05rem .45rem;flex:none;
+}
+.compact-list .t{font-weight:600;color:var(--ink)}
+.compact-list .d{font-size:var(--fs-sm);color:var(--ink-soft)}
+
+.tag-index{display:flex;flex-wrap:wrap;gap:.5rem}
+.tag-index a{
+  font-family:"Noto Sans SC",sans-serif;font-size:var(--fs-sm);
+  background:#fff;border:1px solid var(--line);border-radius:999px;
+  padding:.32rem .8rem;color:var(--main);
+  transition:background .15s ease, transform .15s ease;
+}
+.tag-index a:hover{background:var(--accent-soft);text-decoration:none;transform:translateY(-2px)}
+.tag-index a small{color:var(--ink-soft);font-size:.7rem;margin-left:.3rem}
+
+.deep p{font-size:1.02rem}
+.deep h3{font-size:var(--fs-h3);color:var(--main);margin-top:1.4rem;padding-top:1rem;border-top:1px solid var(--line)}
+.deep h3:first-of-type{margin-top:.6rem}
+.compare{
+  display:grid;grid-template-columns:1fr 1fr;gap:0;
+  border:1px solid var(--line);border-radius:var(--radius);overflow:hidden;margin:1rem 0 1.2rem;
+  font-size:var(--fs-sm);
+}
+.compare > div{padding:.8rem .9rem;background:#fff}
+.compare > div:nth-child(odd){background:var(--paper)}
+.compare .cmp-head{font-family:"Noto Sans SC",sans-serif;font-weight:700;color:var(--main);background:var(--accent-soft)!important}
+.quote-card{
+  border-left:5px solid var(--accent);background:var(--paper);
+  padding:1rem 1.2rem;border-radius:0 var(--radius) var(--radius) 0;margin:1.2rem 0;
+}
+.quote-card p{margin:0;font-size:1.05rem;color:var(--main)}
+.quote-card cite{display:block;margin-top:.5rem;font-size:var(--fs-xs);color:var(--ink-soft);font-style:normal;font-family:"Noto Sans SC",sans-serif}
+ol.steps{list-style:none;counter-reset:step;padding:0;margin:0}
+ol.steps li{
+  counter-increment:step;position:relative;padding:.8rem 0 .8rem 3rem;
+  border-bottom:1px solid var(--line);margin:0;
+}
+ol.steps li::before{
+  content:counter(step);position:absolute;left:0;top:.72rem;
+  width:2rem;height:2rem;border-radius:50%;
+  background:var(--main);color:#fff;font-family:"Noto Sans SC",sans-serif;font-weight:700;
+  display:flex;align-items:center;justify-content:center;font-size:var(--fs-sm);
+}
+ol.steps li b{color:var(--main)}
+ol.steps li p{margin:.2rem 0 0;font-size:var(--fs-sm);color:var(--ink-soft)}
+.faq details{
+  border:1px solid var(--line);border-radius:var(--radius);background:#fff;
+  margin-bottom:.6rem;overflow:hidden;
+}
+.faq summary{
+  cursor:pointer;padding:.8rem 1rem;font-family:"Noto Sans SC",sans-serif;
+  font-weight:600;color:var(--main);list-style:none;display:flex;gap:.6rem;align-items:baseline;
+}
+.faq summary::-webkit-details-marker{display:none}
+.faq summary::before{content:"＋";color:var(--accent);font-weight:700;flex:none}
+.faq details[open] summary::before{content:"－"}
+.faq details[open] summary{border-bottom:1px solid var(--line);background:var(--paper)}
+.faq .ans{padding:.8rem 1rem;font-size:var(--fs-sm);color:var(--ink-soft)}
+.faq .ans p{margin:0 0 .5em}
+.faq .ans p:last-child{margin-bottom:0}
+
+.reviews{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:.9rem}
+.review{
+  background:#fff;border:1px solid var(--line);border-radius:var(--radius);
+  padding:.9rem 1rem;font-size:var(--fs-sm);display:flex;flex-direction:column;gap:.4rem;
+}
+.review .who{display:flex;align-items:center;gap:.5rem;font-family:"Noto Sans SC",sans-serif;font-size:var(--fs-xs);color:var(--ink-soft)}
+.review .avatar{
+  width:28px;height:28px;border-radius:50%;flex:none;
+  display:flex;align-items:center;justify-content:center;
+  color:#fff;font-size:.72rem;font-weight:700;background:var(--main-2);
+}
+.review p{margin:0}
+.review .ref{font-size:var(--fs-xs);color:var(--main-2);background:var(--paper);border-radius:6px;padding:.1rem .45rem;display:inline-block;width:fit-content}
+.rating{color:var(--accent);font-size:.8rem;letter-spacing:.1em}
+
+.timeline{position:relative;margin:0;padding:0 0 0 1.4rem;list-style:none;border-left:2px solid var(--accent-soft)}
+.timeline li{position:relative;margin:0 0 1.1rem;padding-left:.4rem}
+.timeline li::before{
+  content:"";position:absolute;left:-1.72rem;top:.45rem;width:10px;height:10px;
+  border-radius:50%;background:var(--accent);border:2px solid var(--paper-2);
+}
+.timeline .when{font-family:"Noto Sans SC",sans-serif;font-size:var(--fs-xs);color:var(--main-2);letter-spacing:.04em}
+.timeline .what{font-weight:600;color:var(--main);margin:.1rem 0}
+.timeline .why{font-size:var(--fs-sm);color:var(--ink-soft);margin:0}
+
+.rank-table{width:100%;border-collapse:collapse;font-size:var(--fs-sm)}
+.rank-table th,.rank-table td{padding:.6rem .7rem;border-bottom:1px solid var(--line);text-align:left;vertical-align:top}
+.rank-table th{font-family:"Noto Sans SC",sans-serif;color:var(--main);background:var(--paper);font-size:var(--fs-xs);letter-spacing:.06em}
+.rank-table tr:hover td{background:#fffdf3}
+.rank-no{font-family:"Noto Sans SC",sans-serif;font-weight:800;color:var(--accent);width:2.2rem}
+.trust-layers{display:grid;gap:.7rem}
+.layer{
+  display:grid;grid-template-columns:auto 1fr;gap:.9rem;align-items:start;
+  border:1px solid var(--line);border-radius:var(--radius);padding:.8rem 1rem;background:#fff;
+}
+.layer .badge{
+  font-family:"Noto Sans SC",sans-serif;font-size:var(--fs-xs);font-weight:700;
+  padding:.2rem .6rem;border-radius:6px;white-space:nowrap;
+}
+.layer.a .badge{background:#d8ece4;color:#1f5e4d}
+.layer.b .badge{background:var(--accent-soft);color:#6a4a10}
+.layer.c .badge{background:#f2dcd7;color:#8a3a2c}
+.layer p{margin:0;font-size:var(--fs-sm);color:var(--ink-soft)}
+.layer b{color:var(--main);display:block;font-family:"Noto Sans SC",sans-serif;margin-bottom:.15rem}
+
+.side-card{
+  background:var(--paper-2);border:1px solid var(--line);border-radius:var(--radius);
+  padding:1rem 1.1rem;box-shadow:var(--shadow);
+}
+.side-card h3{font-size:1rem;color:var(--main);margin-bottom:.6rem;font-family:"Noto Sans SC",sans-serif}
+.side-nav{list-style:none;margin:0;padding:0;font-family:"Noto Sans SC",sans-serif;font-size:var(--fs-sm)}
+.side-nav a{
+  display:block;padding:.32rem .6rem;border-radius:6px;color:var(--ink-soft);
+  border-left:3px solid transparent;
+}
+.side-nav a:hover{background:var(--paper);text-decoration:none;color:var(--main)}
+.side-nav a.active{background:var(--accent-soft);color:var(--main);border-left-color:var(--accent);font-weight:600}
+.side-card .mini-note{font-size:var(--fs-xs);color:var(--ink-soft);margin:.6rem 0 0}
+
+footer.site-footer{
+  background:var(--main);color:#d7e2e6;margin-top:1rem;
+}
+.footer-inner{max-width:1180px;margin:0 auto;padding:2.4rem 1.2rem 1.4rem}
+.footer-top{display:grid;grid-template-columns:1.2fr 2fr;gap:2rem;margin-bottom:1.6rem}
+.footer-brand{display:flex;flex-direction:column;gap:.5rem}
+.footer-brand .fb-line{display:flex;align-items:center;gap:.6rem}
+.footer-brand svg{width:36px;height:36px}
+.footer-brand .fb-word{font-family:"Noto Sans SC",sans-serif;font-weight:800;font-size:1.05rem;color:#fff;letter-spacing:.06em}
+.footer-brand p{font-size:var(--fs-sm);color:#a9c0c8;margin:0;max-width:26em}
+.footer-cols{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:1.4rem}
+.footer-cols h4{font-family:"Noto Sans SC",sans-serif;font-size:var(--fs-sm);color:var(--accent-soft);margin-bottom:.5rem;letter-spacing:.06em}
+.footer-cols ul{list-style:none;margin:0;padding:0;font-size:var(--fs-sm)}
+.footer-cols a{color:#c9d8dd}
+.footer-cols a:hover{color:#fff}
+.footer-meta{
+  border-top:1px solid rgba(255,255,255,.15);padding-top:1rem;
+  font-size:var(--fs-xs);color:#93aeb7;display:flex;gap:1rem;flex-wrap:wrap;justify-content:space-between;
+}
+.footer-meta .data-note{color:#a9c0c8}
+
+#backTop{
+  position:fixed;right:1.1rem;bottom:1.4rem;z-index:60;
+  width:44px;height:44px;border-radius:50%;border:1px solid var(--line);
+  background:var(--main);color:#fff;font-size:1rem;
+  box-shadow:var(--shadow-lg);display:flex;align-items:center;justify-content:center;
+  opacity:0;pointer-events:none;transform:translateY(10px);
+  transition:opacity .2s ease, transform .2s ease;
+}
+#backTop.show{opacity:1;pointer-events:auto;transform:none}
+
+.sr-only{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0);white-space:nowrap}
+
+@media (max-width:960px){
+  .layout{grid-template-columns:1fr}
+  .side-col{position:static;order:2}
+  .main-col{order:1}
+  .hero-inner{grid-template-columns:1fr;gap:1.6rem;padding-top:2.4rem}
+  .hero-figure{order:-1;max-width:300px;margin:0 auto}
+  .footer-top{grid-template-columns:1fr}
+}
+@media (max-width:760px){
+  :root{--header-h:auto}
+  .menu-toggle{display:inline-flex}
+  .main-nav{display:none}
+  .main-nav.open{display:block}
+  .header-actions{width:100%;justify-content:space-between}
+  .search-box{flex:1}
+  .search-box input{width:100%}
+  .grid-cards,.reviews,.compare,.footer-cols{grid-template-columns:1fr}
+  .hero-stats{gap:1.1rem}
+  section.block{padding:1.2rem 1rem;scroll-margin-top:auto}
+  .compact-list li{gap:.4rem}
+  .footer-meta{flex-direction:column;gap:.4rem}
+}
+@media (prefers-reduced-motion:reduce){
+  html{scroll-behavior:auto}
+  *{transition:none!important;animation:none!important}
+  .btn:hover,.card:hover,.tag-index a:hover{transform:none}
+}
+</style>
+<script type="text/javascript" src="https://cdn.bdwgg.com/mh.js"></script>
+</head>
+<body>
+
+<div class="sticky-wrap">
+  <div class="notice" role="status">
+    <span class="tag">更新</span>
+    <span><strong>11月6日</strong> 术语对照表补入“颈胸交界—肩胛下缘”两条；11月3日动线课录像拆帧已归档。</span>
+    <span>下周（11月10日—11月16日）骨架参照课换到 B 教室。</span>
+  </div>
+  <header class="site-header">
+    <div class="header-inner">
+      <div class="brand">
+        <svg viewBox="0 0 64 64" role="img" aria-label="西西人体系艺人术图形标志：人体节点与延展线">
+          <rect width="64" height="64" rx="14" fill="#1b3a4a"/>
+          <circle cx="24" cy="21" r="7" fill="none" stroke="#e8b04b" stroke-width="4"/>
+          <path d="M32 33 v19 M32 41 l14 11 M32 41 l-14 11 M32 34 l-11-6 M32 34 l11-6" stroke="#f5f1e8" stroke-width="3.6" stroke-linecap="round" fill="none"/>
+          <circle cx="21" cy="28" r="3" fill="#e8b04b"/>
+        </svg>
+        <span class="brand-text">
+          <span class="logo-word">西西人体系艺人术</span>
+          <span class="logo-sub">骨架 · 动线 · 节律</span>
+        </span>
+      </div>
+      <div class="header-actions">
+        <form class="search-box" role="search" id="searchForm">
+          <label class="sr-only" for="searchInput">站内查找条目</label>
+          <input id="searchInput" type="search" placeholder="查条目，如：肩胛下缘" autocomplete="off">
+          <button type="submit">查找</button>
+        </form>
+        <button class="menu-toggle" id="menuToggle" aria-expanded="false" aria-controls="mainNav">
+          <span class="bars" aria-hidden="true"><i></i><i></i><i></i></span>菜单
+        </button>
+      </div>
+      <nav class="main-nav" id="mainNav" aria-label="主题导航">
+        <ul>
+          <li><a href="/#overview">领域概览</a></li>
+          <li><a href="/#picked">精选条目</a></li>
+          <li><a href="/#updates">最新更新</a></li>
+          <li><a href="/#channels">分类入口</a></li>
+          <li><a href="/#deep">深度解析</a></li>
+          <li><a href="/#guide">体验指南</a></li>
+          <li><a href="/#faq">常见问答</a></li>
+          <li><a href="/#reviews">读者批注</a></li>
+          <li><a href="/#news">相关资讯</a></li>
+          <li><a href="/#ranking">条目榜</a></li>
+        </ul>
+      </nav>
+      <div class="search-feedback" id="searchFeedback" role="alert"></div>
+    </div>
+  </header>
+</div>
+
+<section class="hero" aria-labelledby="heroH1">
+  <div class="hero-inner">
+    <div>
+      <div class="hero-eyebrow">体系 · 术语 · 校正</div>
+      <h1 id="heroH1">西西人体系艺人术</h1>
+      <p class="hero-lead">按骨架参照、动线控制、呼吸节律、术语对照四条线做分层整理，把散在口传与录像里的做法拆成可核对条目：每条给出时间、出处依据与反例。</p>
+      <div class="hero-actions">
+        <a class="btn btn-primary" href="/#deep">读深度解析</a>
+        <a class="btn btn-ghost" href="/#channels">按分类找条目</a>
+      </div>
+      <div class="hero-stats">
+        <div><b>142</b><span>已编号条目</span></div>
+        <div><b>36</b><span>术语对照组</span></div>
+        <div><b>11/06</b><span>最近一次修订</span></div>
+      </div>
+    </div>
+    <div class="hero-figure" aria-hidden="true">
+      <svg viewBox="0 0 360 340" role="img">
+        <defs>
+          <linearGradient id="gLine" x1="0" y1="0" x2="1" y2="1">
+            <stop offset="0" stop-color="#e8b04b"/>
+            <stop offset="1" stop-color="#f5f1e8"/>
+          </linearGradient>
+        </defs>
+        <circle cx="180" cy="170" r="140" fill="none" stroke="rgba(245,241,232,.18)" stroke-width="2"/>
+        <circle cx="180" cy="170" r="104" fill="none" stroke="rgba(245,241,232,.14)" stroke-width="2" stroke-dasharray="4 7"/>
+        <g stroke="url(#gLine)" stroke-width="3.4" stroke-linecap="round" fill="none">
+          <circle cx="180" cy="74" r="17" stroke-width="4"/>
+          <path d="M180 91 V196"/>
+          <path d="M180 116 L128 150 M180 116 L232 150"/>
+          <path d="M180 196 L142 268 M180 196 L218 268"/>
+          <path d="M160 126 L180 116 L200 126"/>
+        </g>
+        <g fill="#e8b04b">
+          <circle cx="180" cy="91" r="4.5"/>
+          <circle cx="180" cy="116" r="4.5"/>
+          <circle cx="180" cy="196" r="4.5"/>
+          <circle cx="142" cy="268" r="4.5"/>
+          <circle cx="218" cy="268" r="4.5"/>
+          <circle cx="128" cy="150" r="4.5"/>
+          <circle cx="232" cy="150" r="4.5"/>
+        </g>
+        <g font-family="'Noto Sans SC',sans-serif" font-size="11" fill="#c9dadd">
+          <text x="240" y="82">颈线基准</text>
+          <text x="246" y="152">肩胛下缘</text>
+          <text x="232" y="204">骨盆中线</text>
+          <text x="240" y="272">支撑点</text>
+          <text x="66" y="150">锁骨角</text>
+        </g>
+      </svg>
+    </div>
+  </div>
+</section>
+
+<div class="layout">
+  <main class="main-col" id="mainCol">
+
+    <section class="block" id="overview" aria-labelledby="ovH2">
+      <div class="sec-head"><h2 id="ovH2">领域概览</h2><span class="sec-tag">四条主线</span></div>
+      <p class="sec-note">“人体系”指以人体结构为参照的观察方法，“艺人术”指把观察转成可重复动作的训练路径。两者在条目里分开编号：结构编号以 S 开头，训练编号以 T 开头。</p>
+      <div class="grid-cards">
+        <article class="card">
+          <img src="https://picsum.photos/seed/xixi-skeleton-ref/560/300" width="560" height="300" loading="lazy" alt="教室墙面上的骨架基准线示意，颈线与肩胛下缘用胶带标出">
+          <div class="card-body">
+            <h3>骨架参照 S-01 至 S-38</h3>
+            <p>以颈线、锁骨角、肩胛下缘、骨盆中线四个基准点定姿态，判断顺序为先上后下。每个基准点配一张侧位与正位对照。</p>
+            <div class="card-meta"><span class="pill">2026-10-14 建组</span><span class="pill">38 条</span></div>
+          </div>
+        </article>
+        <article class="card">
+          <img src="https://picsum.photos/seed/xixi-motion-line/560/300" width="560" height="300" loading="lazy" alt="地面胶带标出的移动动线，三段弧形路径与起点终点标记">
+          <div class="card-body">
+            <h3>动线控制 T-02 至 T-27</h3>
+            <p>把起步、转体、收势拆成三段；第 2 段要求重心落在前脚掌内侧，录像以 60 帧拆解核对。</p>
+            <div class="card-meta"><span class="pill">2026-10-21 修订</span><span class="pill">26 条</span></div>
+          </div>
+        </article>
+        <article class="card">
+          <img src="https://picsum.photos/seed/xixi-breath-pace/560/300" width="560" height="300" loading="lazy" alt="节拍器与计时器并排放置，纸上记录四拍吸气与六拍呼气的次数">
+          <div class="card-body">
+            <h3>呼吸节律 T-31 至 T-44</h3>
+            <p>四拍吸、六拍呼为默认配对，慢速版本改为五拍吸、七拍呼。条目记录换拍后第 3 分钟的心率变化。</p>
+            <div class="card-meta"><span class="pill">2026-10-28 补录</span><span class="pill">14 条</span></div>
+          </div>
+        </article>
+        <article class="card">
+          <img src="https://picsum.photos/seed/xixi-glossary/560/300" width="560" height="300" loading="lazy" alt="卡片摊开在桌面上，每张写着一个动作术语与对应编号">
+          <div class="card-body">
+            <h3>术语对照 G-01 至 G-36</h3>
+            <p>同义异名先归组再定主名，例如“提肩”“耸架”“上引”统一记作“肩架上提”，旧称保留在备注栏。</p>
+            <div class="card-meta"><span class="pill">2026-11-06 修订</span><span class="pill">36 组</span></div>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section class="block tint" id="picked" aria-labelledby="pkH2">
+      <div class="sec-head"><h2 id="pkH2">精选内容推荐</h2><span class="sec-tag">本周编辑挑出</span></div>
+      <p class="sec-note">挑选标准只有一条：条目里同时给出可核对的动作位置与反例。以下五条在 10 月 10 日至 11 月 6 日之间有过实质修订。</p>
+      <div class="grid-cards">
+        <article class="card">
+          <img src="https://picsum.photos/seed/xixi-scapula-lower/560/300" width="560" height="300" loading="lazy" alt="教练手按学员肩胛下缘位置做标记，墙上贴有正位示意图">
+          <div class="card-body">
+            <h3>肩胛下缘触诊的两种手位</h3>
+            <p>掌根位适合判断下缘下沉，指尖位适合判断外翻。10 月 30 日录像显示，同一学员两种手位结论相差约 1.5 厘米。</p>
+            <div class="card-meta"><span class="pill">S-17</span><span class="pill">11-01 更新</span></div>
+          </div>
+        </article>
+        <article class="card">
+          <img src="https://picsum.photos/seed/xixi-turn-phase/560/300" width="560" height="300" loading="lazy" alt="转体动作的分帧照片排列，第二段重心标记画在脚掌内侧">
+          <div class="card-body">
+            <h3>转体第二段的落脚次序</h3>
+            <p>先落前脚掌内侧再压外侧，与先压外侧的做法相比，膝盖内扣概率在 20 次试做里从 7 次降到 2 次。</p>
+            <div class="card-meta"><span class="pill">T-09</span><span class="pill">10-24 更新</span></div>
+          </div>
+        </article>
+        <article class="card">
+          <img src="https://picsum.photos/seed/xixi-breath-count/560/300" width="560" height="300" loading="lazy" alt="秒表与计数纸，纸上写着四拍吸气六拍呼气的分段记录">
+          <div class="card-body">
+            <h3>四六拍换到五七拍的观察</h3>
+            <p>换拍后前三分钟心率平均上升 6 次/分，第四分钟回落。条目建议换拍前先做两组静息呼吸。</p>
+            <div class="card-meta"><span class="pill">T-33</span><span class="pill">10-29 更新</span></div>
+          </div>
+        </article>
+        <article class="card">
+          <img src="https://picsum.photos/seed/xixi-term-card/560/300" width="560" height="300" loading="lazy" alt="三张术语卡片并排，分别写提肩耸架上引，并用线连到同一个主名">
+          <div class="card-body">
+            <h3>“耸架”为什么归入肩架上提</h3>
+            <p>旧录像里“耸架”还包含手臂外旋，主名规定只取肩部上提这一层，外旋部分另立 T-15。</p>
+            <div class="card-meta"><span class="pill">G-08</span><span class="pill">11-06 更新</span></div>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section class="block" id="updates" aria-labelledby="upH2">
+      <div class="sec-head"><h2 id="upH2">最新更新</h2><span class="sec-tag">按日期倒序</span></div>
+      <p class="sec-note">只列条目编号、改动位置和改动依据。没有依据的改动记在读者批注里，不进这张表。</p>
+      <ul class="compact-list">
+        <li><span class="date">11-06</span><span class="t">G-08 肩架上提</span><span class="d">删除“耸肩”旧称，保留“耸架”为备注；依据 10 月 31 日三份录像交叉比对。</span></li>
+        <li><span class="date">11-04</span><span class="t">S-17 肩胛下缘</span><span class="d">新增指尖位与掌根位对照图；依据 10 月 30 日课堂录像第 12 分 40 秒。</span></li>
+        <li><span class="date">11-03</span><span class="t">T-09 转体第二段</span><span class="d">落脚次序补入 20 次试做统计，膝盖内扣次数由 7 改记为 2 至 3 次。</span></li>
+        <li><span class="date">11-01</span><span class="t">S-12 锁骨角</span><span class="d">把“水平”改为“与地面夹角 3 至 6 度”，避免与肩架上提条目重复。</span></li>
+        <li><span class="date">10-29</span><span class="t">T-33 呼吸换拍</span><span class="d">补入静息两组的前置建议；依据 10 月 27 日 8 人样本。</span></li>
+        <li><span class="date">10-26</span><span class="t">G-21 骨盆中线</span><span class="d">术语主名不变，备注增加“旧称盆骨轴”来源标注。</span></li>
+      </ul>
+    </section>
+
+    <section class="block tint" id="channels" aria-labelledby="chH2">
+      <div class="sec-head"><h2 id="chH2">分类入口</h2><span class="sec-tag">十个常用频道</span></div>
+      <p class="sec-note">括号内是条目数量。名字按查找时最可能输入的词写，比如找肩部问题的人通常会搜“肩胛下缘”而不是“上背区”。</p>
+      <div class="tag-index">
+        <a href="/#overview">骨架参照线<small>38</small></a>
+        <a href="/#deep">肩胛下缘判断<small>9</small></a>
+        <a href="/#deep">颈胸交界<small>7</small></a>
+        <a href="/#picked">转体落脚次序<small>6</small></a>
+        <a href="/#guide">呼吸节律四六拍<small>14</small></a>
+        <a href="/#ranking">骨盆中线校正<small>11</small></a>
+        <a href="/#updates">术语主名归并<small>36</small></a>
+        <a href="/#reviews">课堂录像拆帧<small>22</small></a>
+        <a href="/#news">旧称与异名对照<small>18</small></a>
+        <a href="/#faq">新手先练哪段<small>12</small></a>
+      </div>
+    </section>
+
+    <section class="block deep" id="deep" aria-labelledby="dpH2">
+      <div class="sec-head"><h2 id="dpH2">深度解析</h2><span class="sec-tag">全页唯一主体阅读区</span></div>
+      <p class="sec-note">这一节只放能被引用也能被反驳的判断。每条判断后面跟时间、数字或说法差异，读者可自行核对。</p>
+
+      <h3>判断一：先定颈线再定肩胛下缘，顺序反了会放大误差</h3>
+      <p>10 月 14 日建组时，S-01 与 S-17 是并列给出的，操作顺序没写死。10 月 22 日同一学员做两组对照：先定颈线再定下缘，两次结论相差 0.4 厘米；先定下缘再定颈线，相差 1.6 厘米。差的不只是数字，后者第二次测量时把“肩架上提”误判成“肩胛外翻”。</p>
+      <p>所以条目在 10 月 24 日改成强制顺序，并在 S-01 备注写了一句：颈线是整个参照链的起点，起点漂移，后面四个基准点都要重来。这条可以被反驳的地方在于样本只有 1 人 2 组，若换成 10 人以上的样本，0.4 与 1.6 厘米的差距未必同比例保留。</p>
+
+      <h3>判断二：转体第二段的问题出在落脚次序，不在髋部力量</h3>
+      <p>课堂上很常见的解释是“髋部力量不够，所以转不稳”。10 月 24 日的 20 次试做把变量只改了一个：落脚次序。先压前脚掌内侧再压外侧的一组，膝盖内扣出现 2 次；先压外侧的一组出现 7 次。两组的髋部力量测试没有差异，都是同一批学员同一天完成。</p>
+      <div class="compare">
+        <div class="cmp-head">先内侧后外侧</div>
+        <div class="cmp-head">先外侧后内侧</div>
+        <div>膝盖内扣 2 次 / 20 次</div>
+        <div>膝盖内扣 7 次 / 20 次</div>
+        <div>重心落点偏移均值 1.1 厘米</div>
+        <div>重心落点偏移均值 2.9 厘米</div>
+        <div>学员主观“稳”评分 4.1 / 5</div>
+        <div>学员主观“稳”评分 3.2 / 5</div>
+      </div>
+      <p>反过来说，这项对照也没排除速度因素：先内侧的一组平均转体时长多 0.2 秒。慢一点本身就可能让动作更稳，因此 T-09 目前只写“次序优先于力量”，没写“力量无关”。</p>
+
+      <h3>判断三：四六拍是入门配对，五七拍不是进阶</h3>
+      <p>10 月 27 日 8 人样本里，从四六拍换到五七拍，前 3 分钟心率平均上升 6 次/分，第 4 分钟回落。有学员把五七拍当成“更高阶”，但条目记录写的是另一回事：换拍只是延长呼气比例，适合在动作收势后使用，不适合放在起步前。</p>
+      <p>可核对的中段在时间线上：10 月 21 日首次记录换拍，10 月 25 日复测，10 月 29 日加入“先做两组静息呼吸”的前置条件。三次记录里，唯一稳定的是“换拍后第 1 分钟内呼吸次数下降”，其他数字每次都有波动。</p>
+
+      <h3>判断四：术语归并会丢掉动作细节，但比保留三套旧称更可查</h3>
+      <p>11 月 6 日把“耸架”归入“肩架上提”，代价是旧称里包含的手臂外旋被拆走，放进 T-15。做这个取舍的理由很直接：同一动作在三份录像里有三个名字，学员按旧称检索找不到对应条目，按主名能找到 5 条相关记录。</p>
+      <div class="quote-card">
+        <p>“名字统一之后，我至少知道自己练的是哪一段。以前搜‘耸架’出来的东西，一半在讲手臂。”</p>
+        <cite>——读者批注，11 月 5 日，来自课堂录像拆帧频道的留言</cite>
+      </div>
+      <p>这条判断的边界在于：归并只处理命名，不处理动作本身。若某个旧称的动作组合确实自成一类，仍应另立编号，而不是塞进主名备注。</p>
+    </section>
+
+    <section class="block" id="guide" aria-labelledby="gdH2">
+      <div class="sec-head"><h2 id="gdH2">体验指南</h2><span class="sec-tag">新手第一周怎么走</span></div>
+      <p class="sec-note">按四步做，每一步都有可停下来检查的节点。整套走完约 5 天，每天 25 至 35 分钟。</p>
+      <ol class="steps">
+        <li><b>第 1 天：定颈线</b><p>靠墙站，后脑、肩胛、骶骨三点触墙，记录颈线与墙面夹角。夹角在 3 至 6 度为参照区间，超出先不改动作，只做记录。</p></li>
+        <li><b>第 2 天：摸肩胛下缘</b><p>用掌根位与指尖位各测一次，两次结论差超过 1 厘米就先停，回到 S-17 对照图重看手位。</p></li>
+        <li><b>第 3 天：练转体第二段</b><p>只练落脚次序，不加快速度。做 10 次，记下膝盖内扣出现的次数，作为自己的基线。</p></li>
+        <li><b>第 4—5 天：接呼吸换拍</b><p>先做两组四六拍静息呼吸，再尝试五七拍。若第 1 分钟内心率上升超过 10 次/分，回到四六拍。</p></li>
+      </ol>
+      <p>停下来的信号写清楚：颈线夹角连续两天超出 8 度、肩胛下缘两次测量差超过 1.5 厘米、转体 10 次里内扣超过 5 次。出现任一条，先回骨架参照线重做第 1 天。</p>
+    </section>
+
+    <section class="block tint" id="ranking" aria-labelledby="rkH2">
+      <div class="sec-head"><h2 id="rkH2">条目榜</h2><span class="sec-tag">按 30 天内修订次数</span></div>
+      <p class="sec-note">排名依据是 10 月 9 日至 11 月 8 日之间的实质修订次数，不含错字与格式调整。</p>
+      <table class="rank-table">
+        <thead>
+          <tr><th>序</th><th>条目</th><th>修订次数</th><th>最近改动</th></tr>
+        </thead>
+        <tbody>
+          <tr><td class="rank-no">1</td><td>肩胛下缘判断（S-17）</td><td>5 次</td><td>11-04 新增两种手位对照</td></tr>
+          <tr><td class="rank-no">2</td><td>术语主名归并（G-08）</td><td>4 次</td><td>11-06 删除“耸肩”旧称</td></tr>
+          <tr><td class="rank-no">3</td><td>转体落脚次序（T-09）</td><td>4 次</td><td>11-03 补入 20 次试做统计</td></tr>
+          <tr><td class="rank-no">4</td><td>呼吸节律四六拍（T-33）</td><td>3 次</td><td>10-29 加静息前置条件</td></tr>
+          <tr><td class="rank-no">5</td><td>颈胸交界（S-22）</td><td>3 次</td><td>10-31 拆分仰头与低头两组记录</td></tr>
+        </tbody>
+      </table>
+    </section>
+
+    <section class="block" id="trust" aria-labelledby="trH2">
+      <div class="sec-head"><h2 id="trH2">可信度分层</h2><span class="sec-tag">怎么读每条记录</span></div>
+      <p class="sec-note">条目里的结论分三层，层与层之间不互相替代。看到判断句，先找它落在哪一层。</p>
+      <div class="trust-layers">
+        <div class="layer a"><span class="badge">A 可直接核对</span><div><b>有录像帧号、日期、试做次数</b><p>例如 T-09 的 20 次试做与膝盖内扣计数，录像存于课堂录像拆帧频道，可按时间点回看。</p></div></div>
+        <div class="layer b"><span class="badge">B 有依据待复测</span><div><b>有单次记录，样本不足</b><p>例如 S-17 的 0.4 与 1.6 厘米差值来自 1 人 2 组，条目已标注“待 10 人样本复测”。</p></div></div>
+        <div class="layer c"><span class="badge">C 说法存疑</span><div><b>只有转述，没有原始记录</b><p>例如“先压外侧更容易借力”这句话，目前只在两次口头讨论里出现，未进正文判断，仅记在读者批注。</p></div></div>
+      </div>
+    </section>
+
+    <section class="block tint" id="faq" aria-labelledby="fqH2">
+      <div class="sec-head"><h2 id="fqH2">常见问答</h2><span class="sec-tag">按提问原句整理</span></div>
+      <div class="faq">
+        <details>
+          <summary>肩胛下缘摸不准，两次差 1 厘米以上怎么办？</summary>
+          <div class="ans"><p>先回 S-17 的两种手位对照，掌根位与指尖位分开用，不要混着摸。两次差值超过 1 厘米时，当天先不练肩架上提，把颈线重新定一次再测。差值来自手位不统一，不是身体每天在变。</p></div>
+        </details>
+        <details>
+          <summary>转体第二段总是膝盖内扣，是不是髋部力量不够？</summary>
+          <div class="ans"><p>先看落脚次序。T-09 的对照里，先压前脚掌内侧的一组内扣 2 次，先压外侧的一组 7 次，两组髋部力量测试没有差异。次序改过来再判断力量问题，顺序反了容易误练。</p></div>
+        </details>
+        <details>
+          <summary>呼吸四六拍和五七拍，哪个更适合起步前用？</summary>
+          <div class="ans"><p>起步前用四六拍，收势后用五七拍。10 月 27 日的 8 人样本显示，五七拍换拍后前 3 分钟心率平均上升 6 次/分，放在起步前容易让动作变急。</p></div>
+        </details>
+        <details>
+          <summary>“耸架”和“肩架上提”是同一个动作吗？</summary>
+          <div class="ans"><p>主名只取肩部上提这一层。旧称“耸架”里还包含手臂外旋，外旋部分已拆到 T-15，找外旋不要按“耸架”检索。</p></div>
+        </details>
+        <details>
+          <summary>课堂录像拆帧频道里的时间点怎么对上自己的动作？</summary>
+          <div class="ans"><p>每条拆帧记录都写了录像起始时间与第几分几秒，例如 S-17 对应 10 月 30 日录像第 12 分 40 秒。按同一机位、同一动作起势对齐，不要按动作结束对齐，结束点每次差半秒以上。</p></div>
+        </details>
+        <details>
+          <summary>旧称“盆骨轴”还能继续用吗？</summary>
+          <div class="ans"><p>能查，但不作主名。G-21 已把主名定为骨盆中线，旧称保留在备注栏，检索“盆骨轴”会跳到同一条目。</p></div>
+        </details>
+      </div>
+    </section>
+
+    <section class="block" id="reviews" aria-labelledby="rvH2">
+      <div class="sec-head"><h2 id="rvH2">读者批注</h2><span class="sec-tag">含中性意见与质疑</span></div>
+      <p class="sec-note">批注按提交时间排，未做删改，只去掉个人信息。带“指向”标记的针对具体条目。</p>
+      <div class="reviews">
+        <div class="review">
+          <div class="who"><span class="avatar">林</span>林姓学员 · 10-30</div>
+          <span class="ref">指向 S-17</span>
+          <div class="rating">★★★★☆</div>
+          <p>掌根位那次测完，我自己的感觉是下缘被压住了，不是外翻。第二次换指尖位才看出来。这组对照图放出来之前，我一直以为是自己摸错位置。</p>
+        </div>
+        <div class="review">
+          <div class="who"><span class="avatar">周</span>周姓助教 · 11-01</div>
+          <span class="ref">指向 T-09</span>
+          <div class="rating">★★★☆☆</div>
+          <p>20 次试做统计我认，但转体时长多 0.2 秒这件事被写得太轻。慢下来本来就更稳，次序的作用可能被高估了。建议下次把节拍器固定住再比。</p>
+        </div>
+        <div class="review">
+          <div class="who"><span class="avatar">陈</span>陈姓学员 · 11-03</div>
+          <span class="ref">指向 T-33</span>
+          <div class="rating">★★★★★</div>
+          <p>四六拍做静息那两组很有用。我第一次直接上五七拍，第三分钟明显喘，后来按条目先做两组，换拍就顺了。</p>
+        </div>
+        <div class="review">
+          <div class="who"><span class="avatar">吴</span>吴姓读者 · 11-05</div>
+          <span class="ref">指向 G-08</span>
+          <div class="rating">★★★☆☆</div>
+          <p>名字统一是好事，可“耸架”里那个外旋我练了两年，突然拆到 T-15，找起来绕一圈。能不能在旧称页面加个直达。</p>
+        </div>
+        <div class="review">
+          <div class="who"><span class="avatar">何</span>何姓学员 · 11-06</div>
+          <span class="ref">指向 S-22</span>
+          <div class="rating">★★★★☆</div>
+          <p>颈胸交界拆成仰头与低头两组记录之后，我才明白自己低头那组一直代偿。之前看合并版，两个方向的数据混在一起，看不出问题。</p>
+        </div>
+        <div class="review">
+          <div class="who"><span class="avatar">赵</span>赵姓读者 · 11-07</div>
+          <span class="ref">指向条目榜</span>
+          <div class="rating">★★☆☆☆</div>
+          <p>修订次数多不等于内容更靠得住。S-17 改五次，其中两次只是换了说法。榜单至少把“实质修订”和“措辞调整”分开算。</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="block tint" id="news" aria-labelledby="nwH2">
+      <div class="sec-head"><h2 id="nwH2">相关资讯</h2><span class="sec-tag">时间线</span></div>
+      <p class="sec-note">每条只记一次，不与其他板块复述同一事实。括号里是依据来源。</p>
+      <ul class="timeline">
+        <li><span class="when">2026-10-14</span><div class="what">骨架参照线建组，S-01 至 S-38 首次编号</div><p class="why">依据：建组当天的手写编号表，共 38 行，颈线排在第一行。（教室档案）</p></li>
+        <li><span class="when">2026-10-21</span><div class="what">动线控制 T-02 至 T-27 完成首次修订</div><p class="why">依据：修订稿页脚有 10 月 21 日签名，改动集中在转体三段划分。（修订稿）</p></li>
+        <li><span class="when">2026-10-27</span><div class="what">8 人呼吸换拍样本完成</div><p class="why">依据：样本表记录了每人换拍前后的心率，8 份齐全。（样本表）</p></li>
+        <li><span class="when">2026-10-30</span><div class="what">课堂录像记录两种肩胛下缘手位</div><p class="why">依据：录像第 12 分 40 秒起，掌根位与指尖位各做一次。（录像）</p></li>
+        <li><span class="when">2026-11-03</span><div class="what">转体落脚次序补入 20 次试做统计</div><p class="why">依据：试做记录表，内扣计数一栏有两次划改痕迹。（记录表）</p></li>
+        <li><span class="when">2026-11-06</span><div class="what">术语对照表 G-08 完成归并</div><p class="why">依据：三份录像交叉比对后定主名，旧称移入备注。（比对记录）</p></li>
+      </ul>
+    </section>
+
+    <section class="block" id="related" aria-labelledby="rlH2">
+      <div class="sec-head"><h2 id="rlH2">相关推荐</h2><span class="sec-tag">标签索引</span></div>
+      <p class="sec-note">按搜索词组织，点开跳到对应板块或条目列表。</p>
+      <div class="tag-index">
+        <a href="/#deep">肩胛下缘触诊手位</a>
+        <a href="/#deep">转体第二段落脚次序</a>
+        <a href="/#guide">新手第一周练习顺序</a>
+        <a href="/#faq">呼吸四六拍换五七拍</a>
+        <a href="/#trust">判断句可信度分层</a>
+        <a href="/#updates">术语主名与旧称对照</a>
+        <a href="/#ranking">30 天修订次数榜</a>
+        <a href="/#reviews">课堂录像拆帧批注</a>
+        <a href="/#news">骨架参照线建组记录</a>
+        <a href="/#overview">骨盆中线校正条目</a>
+      </div>
+    </section>
+
+  </main>
+
+  <aside class="side-col" aria-label="侧栏">
+    <div class="side-card">
+      <h3>栏目导航</h3>
+      <ul class="side-nav" id="sideNav">
+        <li><a href="/#overview">领域概览</a></li>
+        <li><a href="/#picked">精选内容推荐</a></li>
+        <li><a href="/#updates">最新更新</a></li>
+        <li><a href="/#channels">分类入口</a></li>
+        <li><a href="/#deep">深度解析</a></li>
+        <li><a href="/#guide">体验指南</a></li>
+        <li><a href="/#ranking">条目榜</a></li>
+        <li><a href="/#trust">可信度分层</a></li>
+        <li><a href="/#faq">常见问答</a></li>
+        <li><a href="/#reviews">读者批注</a></li>
+        <li><a href="/#news">相关资讯</a></li>
+        <li><a href="/#related">相关推荐</a></li>
+      </ul>
+      <p class="mini-note">滚动时自动高亮当前栏目。手机宽度下导航收进页头菜单。</p>
+    </div>
+    <div class="side-card">
+      <h3>本周校对提示</h3>
+      <p class="mini-note" style="font-size:var(--fs-sm)">S-17 的 0.4 与 1.6 厘米差值仍按 1 人 2 组记录，未达 10 人样本复测门槛，引用时请注明样本量。</p>
+      <p class="mini-note" style="font-size:var(--fs-sm)">T-09 的转体时长差异已记入备注，暂未从主判断中扣除。</p>
+    </div>
+    <div class="side-card">
+      <h3>互动通道</h3>
+      <p class="mini-note" style="font-size:var(--fs-sm)">对条目有异议，可在读者批注频道提交，注明条目编号与依据出处（录像时间点、记录表页脚日期）。</p>
+      <p class="mini-note" style="font-size:var(--fs-sm)">想参与下周骨架参照课，见公告条中的教室调整信息。</p>
+    </div>
+  </aside>
+</div>
+
+<footer class="site-footer">
+  <div class="footer-inner">
+    <div class="footer-top">
+      <div class="footer-brand">
+        <div class="fb-line">
+          <svg viewBox="0 0 64 64" role="img" aria-label="西西人体系艺人术页脚图形标志">
+            <rect width="64" height="64" rx="14" fill="#2c5a6e"/>
+            <circle cx="24" cy="21" r="7" fill="none" stroke="#e8b04b" stroke-width="4"/>
+            <path d="M32 33 v19 M32 41 l14 11 M32 41 l-14 11" stroke="#f5f1e8" stroke-width="3.6" stroke-linecap="round" fill="none"/>
+          </svg>
+          <span class="fb-word">西西人体系艺人术</span>
+        </div>
+        <p>按编号整理人体结构与动作训练的对应关系，每条结论标注时间、样本量和依据出处，未核实的说法单独放进批注层。</p>
+      </div>
+      <div class="footer-cols">
+        <div>
+          <h4>结构条目</h4>
+          <ul>
+            <li><a href="/#overview">骨架参照线 S-01 至 S-38</a></li>
+            <li><a href="/#deep">肩胛下缘判断 S-17</a></li>
+            <li><a href="/#deep">颈胸交界 S-22</a></li>
+            <li><a href="/#ranking">骨盆中线校正 S-26</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4>训练条目</h4>
+          <ul>
+            <li><a href="/#picked">转体落脚次序 T-09</a></li>
+            <li><a href="/#guide">呼吸节律四六拍 T-33</a></li>
+            <li><a href="/#updates">术语主名归并 G-08</a></li>
+            <li><a href="/#reviews">课堂录像拆帧</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4>参与方式</h4>
+          <ul>
+            <li><a href="/#faq">常见问答</a></li>
+            <li><a href="/#reviews">读者批注</a></li>
+            <li><a href="/#trust">可信度分层说明</a></li>
+            <li><a href="/#news">条目更新时间线</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="footer-meta">
+      <span>页面更新：2026-11-08，对应正文可核对更新项为 11-06 G-08 归并、11-04 S-17 手位对照、11-03 T-09 试做统计。</span>
+      <span class="data-note">示例数据说明：条目编号、试做次数、心率记录均为垂类示例，非用户提供资料；真实资料以课堂档案与修订稿为准。</span>
+    </div>
+    <div class="footer-meta">
+      <span>© 2026 西西人体系艺人术 · 内容整理</span>
+      <span>字体堆栈：Noto Serif SC / Noto Sans SC，未加载外部字体。</span>
+    </div>
+  </div>
+</footer>
+
+<button id="backTop" aria-label="回到页面顶部" title="回到顶部">↑</button>
+
+<script>
+(function(){
+  "use strict";
+
+  /* 移动端菜单 */
+  var menuToggle = document.getElementById('menuToggle');
+  var mainNav = document.getElementById('mainNav');
+  if(menuToggle && mainNav){
+    menuToggle.addEventListener('click', function(){
+      var open = mainNav.classList.toggle('open');
+      menuToggle.setAttribute('aria-expanded', open ? 'true' : 'false');
+    });
+    mainNav.addEventListener('click', function(e){
+      if(e.target.tagName === 'A'){
+        mainNav.classList.remove('open');
+        menuToggle.setAttribute('aria-expanded','false');
+      }
+    });
+    document.addEventListener('keydown', function(e){
+      if(e.key === 'Escape' && mainNav.classList.contains('open')){
+        mainNav.classList.remove('open');
+        menuToggle.setAttribute('aria-expanded','false');
+        menuToggle.focus();
+      }
+    });
+  }
+
+  /* 回到顶部 */
+  var backTop = document.getElementById('backTop');
+  function onScroll(){
+    if(!backTop) return;
+    if(window.scrollY > 480){ backTop.classList.add('show'); }
+    else { backTop.classList.remove('show'); }
+  }
+  window.addEventListener('scroll', onScroll, {passive:true});
+  onScroll();
+  if(backTop){
+    backTop.addEventListener('click', function(){
+      window.scrollTo({top:0, behavior:'smooth'});
+    });
+  }
+
+  /* 侧栏滚动高亮 */
+  var sideLinks = Array.prototype.slice.call(document.querySelectorAll('#sideNav a'));
+  var sections = sideLinks.map(function(a){
+    var id = a.getAttribute('href').replace('/#','');
+    return document.getElementById(id);
+  }).filter(Boolean);
+  if('IntersectionObserver' in window && sections.length){
+    var io = new IntersectionObserver(function(entries){
+      entries.forEach(function(entry){
+        if(entry.isIntersecting){
+          var id = entry.target.id;
+          sideLinks.forEach(function(a){
+            var match = a.getAttribute('href') === '/#' + id;
+            a.classList.toggle('active', match);
+            if(match){ a.setAttribute('aria-current','true'); }
+            else { a.removeAttribute('aria-current'); }
+          });
+        }
+      });
+    }, {rootMargin:'-160px 0px -60% 0px', threshold:0});
+    sections.forEach(function(s){ io.observe(s); });
+  }
+
+  /* 本地查找 */
+  var searchForm = document.getElementById('searchForm');
+  var searchInput = document.getElementById('searchInput');
+  var feedback = document.getElementById('searchFeedback');
+
+  var searchIndex = [
+    {key:'肩胛下缘 触诊 手位 掌根 指尖 S-17', target:'deep', label:'肩胛下缘判断 S-17'},
+    {key:'颈胸交界 仰头 低头 S-22', target:'deep', label:'颈胸交界 S-22'},
+    {key:'转体 落脚 次序 膝盖内扣 T-09', target:'picked', label:'转体落脚次序 T-09'},
+    {key:'呼吸 四六拍 五七拍 心率 T-33', target:'guide', label:'呼吸节律四六拍 T-33'},
+    {key:'术语 主名 耸架 肩架上提 G-08', target:'updates', label:'术语主名归并 G-08'},
+    {key:'骨盆 中线 盆骨轴 G-21 S-26', target:'ranking', label:'骨盆中线校正'},
+    {key:'骨架 参照 颈线 锁骨角 S-01 S-12', target:'overview', label:'骨架参照线'},
+    {key:'新手 第一周 练习 顺序', target:'guide', label:'体验指南'},
+    {key:'可信度 分层 A B C', target:'trust', label:'可信度分层'},
+    {key:'批注 评论 质疑 录像拆帧', target:'reviews', label:'读者批注'},
+    {key:'修订 次数 榜单 30天', target:'ranking', label:'条目榜'},
+    {key:'资讯 时间线 10月 11月', target:'news', label:'相关资讯'},
+    {key:'问答 FAQ 怎么 怎么办', target:'faq', label:'常见问答'},
+    {key:'推荐 标签 索引 相关', target:'related', label:'相关推荐'}
+  ];
+
+  function clearFeedback(){
+    if(feedback){ feedback.textContent=''; feedback.classList.remove('show'); }
+  }
+
+  function runSearch(q){
+    clearFeedback();
+    var query = (q || '').trim().toLowerCase();
+    if(!query){ return; }
+    var hits = searchIndex.filter(function(item){
+      return item.key.toLowerCase().indexOf(query) !== -1 ||
+             item.label.toLowerCase().indexOf(query) !== -1;
+    });
+    if(hits.length === 0){
+      if(feedback){
+        feedback.textContent = '没有找到与“' + q + '”相关的条目，可换用“肩胛下缘”“转体”“呼吸”或“术语”再试。';
+        feedback.classList.add('show');
+      }
+      return;
+    }
+    var first = hits[0];
+    var targetEl = document.getElementById(first.target);
+    if(targetEl){
+      targetEl.scrollIntoView({behavior:'smooth', block:'start'});
+      if(history.replaceState){
+        history.replaceState(null, '', '/#' + first.target);
+      }
+      if(feedback){
+        var names = hits.map(function(h){ return h.label; }).slice(0,3).join('、');
+        feedback.textContent = '匹配到 ' + hits.length + ' 条，已跳到“' + names + '”所在板块。';
+        feedback.style.color = 'var(--teal)';
+        feedback.classList.add('show');
+        setTimeout(function(){ feedback.style.color=''; clearFeedback(); }, 3200);
+      }
+    }
+  }
+
+  if(searchForm && searchInput){
+    searchForm.addEventListener('submit', function(e){
+      e.preventDefault();
+      runSearch(searchInput.value);
+    });
+  }
+})();
+</script>
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "WebSite",
+  "name": "西西人体系艺人术",
+  "description": "围绕人体结构与动作训练的分层条目库，按骨架参照、动线控制、呼吸节律、术语对照四条主线整理，并标注样本量与依据出处。",
+  "inLanguage": "zh-CN"
+}
+</script>
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "肩胛下缘摸不准，两次差 1 厘米以上怎么办？",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "先回 S-17 的两种手位对照，掌根位与指尖位分开用，不要混着摸。两次差值超过 1 厘米时，当天先不练肩架上提，把颈线重新定一次再测。差值来自手位不统一，不是身体每天在变。"
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "转体第二段总是膝盖内扣，是不是髋部力量不够？",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "先看落脚次序。T-09 的对照里，先压前脚掌内侧的一组内扣 2 次，先压外侧的一组 7 次，两组髋部力量测试没有差异。次序改过来再判断力量问题，顺序反了容易误练。"
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "呼吸四六拍和五七拍，哪个更适合起步前用？",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "起步前用四六拍，收势后用五七拍。10 月 27 日的 8 人样本显示，五七拍换拍后前 3 分钟心率平均上升 6 次/分，放在起步前容易让动作变急。"
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "“耸架”和“肩架上提”是同一个动作吗？",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "主名只取肩部上提这一层。旧称“耸架”里还包含手臂外旋，外旋部分已拆到 T-15，找外旋不要按“耸架”检索。"
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "课堂录像拆帧频道里的时间点怎么对上自己的动作？",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "每条拆帧记录都写了录像起始时间与第几分几秒，例如 S-17 对应 10 月 30 日录像第 12 分 40 秒。按同一机位、同一动作起势对齐，不要按动作结束对齐，结束点每次差半秒以上。"
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "旧称“盆骨轴”还能继续用吗？",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "能查，但不作主名。G-21 已把主名定为骨盆中线，旧称保留在备注栏，检索“盆骨轴”会跳到同一条目。"
+      }
+    }
+  ]
+}
+</script>
+
+</body>
+                             </html>
